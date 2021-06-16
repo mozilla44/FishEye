@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,qBAAqB;CACrC;;AGFD,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,QAAQ;EACvB,MAAM,EAAE,QAAQ;EAChB,KAAK,EAAE,QAAQ;EACf,UAAU,EAAE,GAAG;EACf,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,YAAY,CAAC;EACb,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,OAAO;CACb;;AAED,AAAA,cAAc,CAAC;EACf,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,OAAO;CACb;;AAED,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,QAAQ;EACf,MAAM,EAAE,GAAG;CACd;;AAED,AAAA,MAAM,EAAC,MAAM,CAAC;EACV,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAC,OAAO;EACb,aAAa,EAAE,QAAQ;EACvB,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,QAAQ;CAClB;;AAED,AAAA,QAAQ,CAAC;EACL,aAAa,EAAE,QAAQ;CAC1B;;AMnCD,AACI,IADA,CACA,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AAJP,AAMI,IANA,CAMA,EAAE,CAAC,CAAC,CAAC;EACC,eAAe,EAAE,IAAI;CAC1B;;AARL,AAUI,IAVA,CAUA,EAAE,CAAC;EACG,eAAe,EAAE,IAAI;CACxB",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/base/_fonts.scss",
+        "../sass/base/_mixins.scss",
+        "../sass/base/_varaibles.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/components/_gallery.scss",
+        "../sass/components/_lightbox.scss",
+        "../sass/components/_modal-contact.scss",
+        "../sass/layout/_index.scss",
+        "../sass/layout/_profiles.scss",
+        "../sass/layout/_global.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

@@ -1,0 +1,36 @@
+.btn {
+    border: none;
+    border-radius: 0.3125em;
+    height: 4.3125em;
+    width: 10.625em;
+    font-weght: 700;
+    box-sizing: border-box;
+}
+
+.btn_primary {
+background-color: #901C1C;
+color: #FFFFFF;
+}
+
+.btn_secondary {
+background-color: #DB8876;
+color: #000000;
+}
+
+.btn_small {
+    width: 10.625em;
+    height: 2em;
+}
+
+select,option {
+    background-color: #901C1C;
+    border: none;
+    color:#FFFFFF;
+    border-radius: 0.3125em; 
+    height: 2em;
+    width: 10.625em;
+}
+
+.sorting {
+    border-radius: 0.3125em;
+}
