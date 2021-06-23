@@ -1,0 +1,3 @@
+function createPhotographerCard (){
+    for (i)
+}
