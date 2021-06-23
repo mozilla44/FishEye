@@ -69,7 +69,7 @@
                             <textarea class="text-control" type="text" id="form_message" name="message" aria-label="Your message"></textarea>
                             <p id="errorFormMesage" class="errorMesage"></p>
                         </div>
-                        <input  class="btn btn_primary" id="contact-submit-btn" type="button" role="button" aria-label="Send" value="Envoyer" onclick="submit">
+                        <input  class="btn btn_primary" id="contact-submit-btn" type="submit" role="button" aria-label="Send" value="Envoyer" onsubmit="return validateContact()">
                       </div>
                     </form>
                 </div>
