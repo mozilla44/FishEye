@@ -11,5 +11,21 @@ body {
     li {
           list-style-type: none;
       }
+      .rounded_img {
+            border-radius: 50%;
+      }
+      .roundedCorner_img {
+            border-radius: 0.3125em;
+      }
+      .tags_links {
+            display: flex;
+            li a {
+                  border: 1px solid grey;
+                  border-radius: 0.6875em;
+                  color: $primary_color;
+                  font-weight: 500;
+            }
+      }
 }
 
+     

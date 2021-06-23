@@ -40,6 +40,16 @@ select, option {
   border-radius: 0.3125em;
 }
 
+.bground {
+  background-color: #DB8876;
+  width: 20em;
+  border-radius: 0.3125em;
+}
+
+.fa-chevron-right, .fa-chevron-left, .fa-times, .fa-heart {
+  color: #901C1C;
+}
+
 body img {
   width: 10em;
   height: 10em;
@@ -51,5 +61,26 @@ body ul a {
 
 body li {
   list-style-type: none;
+}
+
+body .rounded_img {
+  border-radius: 50%;
+}
+
+body .roundedCorner_img {
+  border-radius: 0.3125em;
+}
+
+body .tags_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .tags_links li a {
+  border: 1px solid grey;
+  border-radius: 0.6875em;
+  color: #901C1C;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
