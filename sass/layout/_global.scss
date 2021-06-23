@@ -24,8 +24,14 @@ body {
                   border-radius: 0.6875em;
                   color: $primary_color;
                   font-weight: 500;
+                  margin: 0 0.3em 0 0;
             }
       }
+}
+
+.profile {
+      text-decoration: none;
+      color: $secondary_color;
 }
 
      

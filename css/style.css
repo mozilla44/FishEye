@@ -82,5 +82,11 @@ body .tags_links li a {
   border-radius: 0.6875em;
   color: #901C1C;
   font-weight: 500;
+  margin: 0 0.3em 0 0;
+}
+
+.profile {
+  text-decoration: none;
+  color: #DB8876;
 }
 /*# sourceMappingURL=style.css.map */
