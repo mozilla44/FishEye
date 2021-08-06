@@ -2,7 +2,7 @@
 
 /* document.getElementById("contact-submit-btn").addEventListener("click", validateContact ) */
 
-/* contact form validsation */
+/* contact form validsation  */
 function validateContact (){
     let regexName = /^\S\D{2,}$/;
     let regexEmail = /^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]­{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$/;
