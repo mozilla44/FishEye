@@ -50,6 +50,7 @@ fetch('/data.json')
     console.log(err)
 })
 
+/* methode sans fleches 
 
 fetch('/data.json')
     .then(function(res) {
@@ -61,3 +62,4 @@ fetch('/data.json')
     .catch(function(err) {
         console.log(err)
     })
+*/

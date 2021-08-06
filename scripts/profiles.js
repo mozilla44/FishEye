@@ -1,5 +1,5 @@
 class Media {
-    constructor(){
+    constructor(data){
         this.title = media.title;
         this.id = media.id;
         this.Id = media.Id;
