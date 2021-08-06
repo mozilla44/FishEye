@@ -58,9 +58,9 @@
         "tags": ["travel", "architecture"],
         "tagline": "Toujours à la recherche de LA photo",
         "price": 300,
-        "portrait": "MarcelNikolic.jpg",
+        "portrait": "MarcelNikolic.jpg"
       }
-    ]
+    ],
     "media": [
       {
         "id": 342550,
@@ -528,7 +528,7 @@
         "photographerId": 195,
         "title": "Adventure Door, India",
         "image": "Travel_Adventure_Door.jpg",
-        "alt": "paysage vu à travers une porte"
+        "alt": "paysage vu à travers une porte",
         "tags": ["travel"],
         "likes": 63,
         "date": "2019-06-26",
