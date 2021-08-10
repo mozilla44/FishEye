@@ -22,7 +22,6 @@ function createPhotographerCard (){
         let  = document.createElement('p');
         let  = document.createElement('img');
         let  = document.createElement('p');
-        
     }
         
 }
