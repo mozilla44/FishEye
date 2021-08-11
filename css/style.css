@@ -107,6 +107,10 @@ body main #photographers_section .photographer_card {
   margin: 2em 0 2em 0;
 }
 
+body main #photographers_section .photographer_card .tags_links {
+  padding: 0;
+}
+
 .fa-chevron-right, .fa-chevron-left, .fa-times, .fa-heart {
   color: #901C1C;
 }
