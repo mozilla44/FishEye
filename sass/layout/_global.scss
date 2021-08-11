@@ -1,7 +1,6 @@
 body {
     img {
-        width: 10em;
-        height: 10em;
+        
       }
     
     ul a {
@@ -13,6 +12,8 @@ body {
       }
       .rounded_img {
             border-radius: 50%;
+            width: 10em;
+            height: 10em;
       }
       .roundedCorner_img {
             border-radius: 0.3125em;
@@ -25,6 +26,7 @@ body {
                   color: $primary_color;
                   font-weight: 500;
                   margin: 0 0.3em 0 0;
+                  padding: 0 0.5em 0 0.5em;
             }
       }
 }
