@@ -33,6 +33,12 @@ body {
                     /* border: 3px solid red; */
                     text-align: center;
                     margin: 2em 0 2em 0;
+                        .photographer_info,.photographer_location,.photographer_tagline,.photographer_price {
+                            margin: 0.5em 0 0.5em 0;
+                        }
+                        .photographer_name {
+                            margin: 0.5em 0 0 0;
+                        }
                         .tags_links {
                             padding: 0;
                         }
