@@ -278,7 +278,6 @@ main .photographer_works .sorting {
 
 main .bground {
   margin: auto;
-  border: 3px solid green;
   width: 25em;
   position: relative;
   padding-top: 2em;
@@ -301,7 +300,7 @@ main .bground .close:before, main .bground .close:after {
   position: absolute;
   content: ' ';
   height: 2.0625em;
-  width: 0.125em;
+  width: 0.20em;
   background-color: white;
 }
 
