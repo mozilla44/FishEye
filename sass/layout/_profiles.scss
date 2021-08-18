@@ -1,3 +1,35 @@
 .fa-chevron-right,.fa-chevron-left,.fa-times,.fa-heart {
     color: $primary_color;
 }
+
+main {
+    width: 90vw;
+    margin: auto;
+    .photographer_presentation {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: $tertiary_color;
+    #contact_btn {
+        background-color: $primary_color;
+        margin-top: 3em;
+        color: white;
+        font-size: 1em;
+    }
+        .photographer_details {
+            display: flex;
+            flex-direction: column;
+            .photographer_name {
+                color: $secondary_color;
+                font-size: 3em;
+            }
+            .photographer_location {
+                color: $primary_color;
+            }
+        }
+    }
+
+    .bground {
+    display: none;
+    }
+}

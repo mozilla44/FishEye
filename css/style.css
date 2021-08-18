@@ -123,6 +123,50 @@ body main #photographers_section .photographer_card .tags_links {
   color: #901C1C;
 }
 
+main {
+  width: 90vw;
+  margin: auto;
+}
+
+main .photographer_presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  background-color: #FAFAFA;
+}
+
+main .photographer_presentation #contact_btn {
+  background-color: #901C1C;
+  margin-top: 3em;
+  color: white;
+  font-size: 1em;
+}
+
+main .photographer_presentation .photographer_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .photographer_presentation .photographer_details .photographer_name {
+  color: #DB8876;
+  font-size: 3em;
+}
+
+main .photographer_presentation .photographer_details .photographer_location {
+  color: #901C1C;
+}
+
+main .bground {
+  display: none;
+}
+
 body ul a {
   text-decoration: none;
 }
