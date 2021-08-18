@@ -225,7 +225,6 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .img_title {
-  /* border: 3px solid red; */
   width: 80%;
   color: #901C1C;
   font-weight: 700;
@@ -236,7 +235,6 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
   color: #901C1C;
   font-weight: 700;
   font-size: 1.1em;
-  /* border: 3px solid blue; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +244,7 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid red;
+  padding-left: 1em;
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .heart_icon {
@@ -264,7 +262,6 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.3em;
-  border: 3px solid green;
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .roundedCorner_img {

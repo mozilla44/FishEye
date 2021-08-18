@@ -68,7 +68,6 @@ main {
                         /* border: 3px solid grey; */
                         display: flex;
                         .img_title {
-                            /* border: 3px solid red; */
                             width: 80%;
                             color: $primary_color;
                             font-weight: 700;
@@ -78,11 +77,11 @@ main {
                             color: $primary_color;
                             font-weight: 700;
                             font-size: 1.1em;
-                            /* border: 3px solid blue; */
+
                             display: flex;
                             justify-content: flex-end;
                             align-items: center;
-                            border: 3px solid red;
+                            padding-left: 1em;
                         }
                         .heart_icon {
                             width: 0.1em;
@@ -91,7 +90,6 @@ main {
                             justify-content: flex-end;
                             align-items: center;
                             font-size: 1.3em;
-                            border: 3px solid green;
                         }
                     }
                     .roundedCorner_img {
