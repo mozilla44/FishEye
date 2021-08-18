@@ -67,9 +67,6 @@ main {
                     .preview_info {
                         /* border: 3px solid grey; */
                         display: flex;
-                        * {
-                            /* border: 3px solid green; */
-                        }
                         .img_title {
                             /* border: 3px solid red; */
                             width: 80%;
@@ -83,20 +80,21 @@ main {
                             font-size: 1.1em;
                             /* border: 3px solid blue; */
                             display: flex;
-                            justify-content: center;
+                            justify-content: flex-end;
                             align-items: center;
+                            border: 3px solid red;
                         }
                         .heart_icon {
+                            width: 0.1em;
                             display: flex;
                             flex-grow: 1;
-                            justify-content: center;
+                            justify-content: flex-end;
                             align-items: center;
                             font-size: 1.3em;
+                            border: 3px solid green;
                         }
-
                     }
                     .roundedCorner_img {
-                        /* border: 3px solid black; */
                         width: 20em;
                         height: 20em;
                         object-fit: cover;
