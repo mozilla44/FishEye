@@ -108,7 +108,6 @@ main {
     }
 
     .bground {
-        border: 3px solid blue;
         margin: auto;
             .contact_name,.modal_photographer_name {
                 font-size: 2em;
@@ -125,6 +124,14 @@ main {
             #contact_form {
                 padding: 0 1.5em 0 1em;
             }
-            
+            #send_btn {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 200px;
+            }
+            #contact-submit-btn {
+                margin: 2em 0 2em 0;
+                height: 3em;
+            }
     }
 }

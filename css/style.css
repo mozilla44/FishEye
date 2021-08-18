@@ -277,7 +277,6 @@ main .photographer_works .sorting {
 }
 
 main .bground {
-  border: 3px solid blue;
   margin: auto;
 }
 
@@ -298,6 +297,21 @@ main .bground .text-control {
 
 main .bground #contact_form {
   padding: 0 1.5em 0 1em;
+}
+
+main .bground #send_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+
+main .bground #contact-submit-btn {
+  margin: 2em 0 2em 0;
+  height: 3em;
 }
 
 body ul a {
