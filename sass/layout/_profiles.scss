@@ -10,6 +10,17 @@ main {
     /* justify-content: space-between; */
     /* align-items: center; */
     background-color: $tertiary_color;
+    .profile_picture {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center;
+            .profile_pic {
+                margin-right: 3em;
+            }
+        
+        
+    }
     #contact_btn {
         background-color: $primary_color;
         margin-top: 2.5em;
@@ -33,6 +44,7 @@ main {
                     padding: 0;
                 }
             }
+            
         }
     }
 

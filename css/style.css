@@ -137,6 +137,25 @@ main .photographer_presentation {
   background-color: #FAFAFA;
 }
 
+main .photographer_presentation .profile_picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .photographer_presentation .profile_picture .profile_pic {
+  margin-right: 3em;
+}
+
 main .photographer_presentation #contact_btn {
   background-color: #901C1C;
   margin-top: 2.5em;
