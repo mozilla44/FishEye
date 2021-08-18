@@ -119,8 +119,15 @@ body main #photographers_section .photographer_card .tags_links {
   padding: 0;
 }
 
-.fa-chevron-right, .fa-chevron-left, .fa-times, .fa-heart {
+.fa-chevron-right,
+.fa-chevron-left,
+.fa-times,
+.fa-heart {
   color: #901C1C;
+}
+
+header .header_logo {
+  margin-top: 1em;
 }
 
 main {
@@ -132,9 +139,8 @@ main .photographer_presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
   background-color: #FAFAFA;
+  margin: 2em 0 1em 0;
 }
 
 main .photographer_presentation .profile_picture {
@@ -186,6 +192,10 @@ main .photographer_presentation .photographer_details .photographer_location {
 
 main .photographer_presentation .photographer_details .profile_tags .tags_links {
   padding: 0;
+}
+
+main .photographer_works .sorting {
+  margin: 2em 0 2em 0;
 }
 
 main .bground {
