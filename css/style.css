@@ -280,6 +280,39 @@ main .bground {
   margin: auto;
   border: 3px solid green;
   width: 25em;
+  position: relative;
+  padding-top: 2em;
+}
+
+main .bground .close {
+  position: absolute;
+  right: 2em;
+  top: 2.5em;
+  width: 2em;
+  height: 2em;
+  opacity: 0.8;
+}
+
+main .bground .close:hover {
+  opacity: 1;
+}
+
+main .bground .close:before, main .bground .close:after {
+  position: absolute;
+  content: ' ';
+  height: 2.0625em;
+  width: 0.125em;
+  background-color: white;
+}
+
+main .bground .close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main .bground .close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 main .bground .contact_name, main .bground .modal_photographer_name {
@@ -320,6 +353,20 @@ main .bground #contact-submit-btn {
 
 main .bground #form_message {
   height: 8em;
+}
+
+main .bground #close_form {
+  /* border: 3px solid blue; */
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  display: none;
+}
+
+main .bground #close_form i {
+  color: white;
+  /* border: 3px solid red; */
+  font-size: 2em;
 }
 
 body ul a {

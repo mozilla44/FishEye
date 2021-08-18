@@ -1,1 +1,3 @@
 - fetch => connect json 
+separateur dropdown
+cross light only pro font awesome
