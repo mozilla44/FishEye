@@ -139,7 +139,7 @@ main .photographer_presentation {
 
 main .photographer_presentation #contact_btn {
   background-color: #901C1C;
-  margin-top: 3em;
+  margin-top: 2.5em;
   color: white;
   font-size: 1em;
 }
@@ -152,15 +152,21 @@ main .photographer_presentation .photographer_details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 1em;
 }
 
 main .photographer_presentation .photographer_details .photographer_name {
   color: #DB8876;
   font-size: 3em;
+  margin-bottom: 0;
 }
 
 main .photographer_presentation .photographer_details .photographer_location {
   color: #901C1C;
+}
+
+main .photographer_presentation .photographer_details .profile_tags .tags_links {
+  padding: 0;
 }
 
 main .bground {
