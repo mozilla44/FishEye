@@ -194,6 +194,88 @@ main .photographer_presentation .photographer_details .profile_tags .tags_links 
   padding: 0;
 }
 
+main .photographer_works {
+  /* border: 3px solid red; */
+}
+
+main .photographer_works .photographer_gallery {
+  /* border: 3px solid green; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .photographer_works .photographer_gallery .gallery_item {
+  /* border: 3px solid yellow; */
+  width: 30%;
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview {
+  /* border: 3px solid salmon; */
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info {
+  /* border: 3px solid grey; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info * {
+  /* border: 3px solid green; */
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .img_title {
+  /* border: 3px solid red; */
+  width: 80%;
+  color: #901C1C;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .number_likes {
+  color: #901C1C;
+  font-weight: 700;
+  font-size: 1.1em;
+  /* border: 3px solid blue; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .heart_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
+}
+
+main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .roundedCorner_img {
+  /* border: 3px solid black; */
+  width: 20em;
+  height: 20em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main .photographer_works .sorting {
   margin: 2em 0 2em 0;
 }

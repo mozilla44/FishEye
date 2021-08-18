@@ -54,6 +54,57 @@ main {
     }
 
     .photographer_works {
+        /* border: 3px solid red; */
+        .photographer_gallery {
+            /* border: 3px solid green; */
+            display: flex;
+            justify-content: space-between;
+            .gallery_item {
+                /* border: 3px solid yellow; */
+                width: 30%;
+                .lightbox_preview {
+                    /* border: 3px solid salmon; */
+                    .preview_info {
+                        /* border: 3px solid grey; */
+                        display: flex;
+                        * {
+                            /* border: 3px solid green; */
+                        }
+                        .img_title {
+                            /* border: 3px solid red; */
+                            width: 80%;
+                            color: $primary_color;
+                            font-weight: 700;
+                            font-size: 1.3em;
+                        }
+                        .number_likes {
+                            color: $primary_color;
+                            font-weight: 700;
+                            font-size: 1.1em;
+                            /* border: 3px solid blue; */
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .heart_icon {
+                            display: flex;
+                            flex-grow: 1;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.3em;
+                        }
+
+                    }
+                    .roundedCorner_img {
+                        /* border: 3px solid black; */
+                        width: 20em;
+                        height: 20em;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
         .sorting {
             margin: 2em 0 2em 0;
         }
