@@ -55,6 +55,7 @@ main {
 
     .photographer_works {
         /* border: 3px solid red; */
+        margin-bottom: 3em;
         .photographer_gallery {
             /* border: 3px solid green; */
             display: flex;
@@ -107,6 +108,23 @@ main {
     }
 
     .bground {
-        display: none;
+        border: 3px solid blue;
+        margin: auto;
+            .contact_name,.modal_photographer_name {
+                font-size: 2em;
+                margin: 0 0 0.5em ;
+            }
+            .input_name {
+                font-size: 1.2em;
+                margin: 0.2em;
+                font-weight: 500;
+            }
+            .text-control {
+                width: 100%;
+            }
+            #contact_form {
+                padding: 0 1.5em 0 1em;
+            }
+            
     }
 }

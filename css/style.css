@@ -196,6 +196,7 @@ main .photographer_presentation .photographer_details .profile_tags .tags_links 
 
 main .photographer_works {
   /* border: 3px solid red; */
+  margin-bottom: 3em;
 }
 
 main .photographer_works .photographer_gallery {
@@ -276,7 +277,27 @@ main .photographer_works .sorting {
 }
 
 main .bground {
-  display: none;
+  border: 3px solid blue;
+  margin: auto;
+}
+
+main .bground .contact_name, main .bground .modal_photographer_name {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+
+main .bground .input_name {
+  font-size: 1.2em;
+  margin: 0.2em;
+  font-weight: 500;
+}
+
+main .bground .text-control {
+  width: 100%;
+}
+
+main .bground #contact_form {
+  padding: 0 1.5em 0 1em;
 }
 
 body ul a {
