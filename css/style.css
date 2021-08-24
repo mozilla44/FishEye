@@ -214,10 +214,6 @@ main .photographer_works .photographer_gallery .gallery_item {
   width: 30%;
 }
 
-main .photographer_works .photographer_gallery .gallery_item .lightbox_preview {
-  /* border: 3px solid salmon; */
-}
-
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info {
   /* border: 3px solid grey; */
   display: -webkit-box;
@@ -266,8 +262,8 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .roundedCorner_img {
-  width: 20em;
-  height: 20em;
+  width: 100%;
+  height: 22em;
   -o-object-fit: cover;
      object-fit: cover;
 }
