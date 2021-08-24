@@ -58,8 +58,8 @@ main {
             }
                 .rounded_img {
                     @include mobile {
-                        height: 6.5em;
-                        width: 6.5em;
+                        height: 5.5em;
+                        width: 5.5em;
                         object-fit: cover;
                         margin-right: 0;
                     }

@@ -207,8 +207,8 @@ main .photographer_presentation .profile_picture .profile_pic {
 
 @media all and (min-width: 320px) and (max-width: 450px) {
   main .photographer_presentation .profile_picture .rounded_img {
-    height: 6.5em;
-    width: 6.5em;
+    height: 5.5em;
+    width: 5.5em;
     -o-object-fit: cover;
        object-fit: cover;
     margin-right: 0;
