@@ -126,8 +126,32 @@ body main #photographers_section .photographer_card .tags_links {
   color: #901C1C;
 }
 
-header .header_logo {
+.previous, .next, .close_lightbox {
+  display: none;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  .profile_header {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.profile_header .header_logo {
   margin-top: 1em;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  .profile_header .header_logo {
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  .profile_header .header_logo img {
+    height: 2em;
+  }
 }
 
 main {
@@ -141,6 +165,18 @@ main .photographer_presentation {
   display: flex;
   background-color: #FAFAFA;
   margin: 2em 0 1em 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation {
+    background-color: inherit;
+    margin-top: 0;
+  }
+}
+
+main .photographer_presentation .rounded_img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .photographer_presentation .profile_picture {
@@ -162,11 +198,43 @@ main .photographer_presentation .profile_picture .profile_pic {
   margin-right: 3em;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .profile_picture {
+    height: 6.5em;
+    width: 6.5em;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .profile_picture .rounded_img {
+    height: 6.5em;
+    width: 6.5em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 0;
+  }
+}
+
 main .photographer_presentation #contact_btn {
   background-color: #901C1C;
   margin-top: 2.5em;
   color: white;
   font-size: 1em;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation #contact_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 2em;
+    left: 30%;
+    right: 30%;
+    height: 2em;
+    width: 7.5em;
+    text-align: center;
+  }
 }
 
 main .photographer_presentation .photographer_details {
@@ -180,10 +248,24 @@ main .photographer_presentation .photographer_details {
   padding-left: 1em;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .photographer_details {
+    padding: 0;
+    max-width: 70%;
+  }
+}
+
 main .photographer_presentation .photographer_details .photographer_name {
   color: #DB8876;
   font-size: 3em;
   margin-bottom: 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .photographer_details .photographer_name {
+    margin-top: 0.5em;
+    font-size: 2.3em;
+  }
 }
 
 main .photographer_presentation .photographer_details .photographer_location {
@@ -195,12 +277,10 @@ main .photographer_presentation .photographer_details .profile_tags .tags_links 
 }
 
 main .photographer_works {
-  /* border: 3px solid red; */
   margin-bottom: 3em;
 }
 
 main .photographer_works .photographer_gallery {
-  /* border: 3px solid green; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,17 +289,30 @@ main .photographer_works .photographer_gallery {
           justify-content: space-between;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_works .photographer_gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .photographer_works .photographer_gallery .gallery_item {
-  /* border: 3px solid yellow; */
   width: 30%;
 }
 
-main .photographer_works .photographer_gallery .gallery_item .lightbox_preview {
-  /* border: 3px solid salmon; */
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_works .photographer_gallery .gallery_item {
+    width: 100%;
+    margin: 1em 0 0 0;
+  }
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info {
-  /* border: 3px solid grey; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +323,12 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
   color: #901C1C;
   font-weight: 700;
   font-size: 1.3em;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .img_title {
+    font-size: 1em;
+  }
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .number_likes {
@@ -246,6 +345,12 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
       -ms-flex-align: center;
           align-items: center;
   padding-left: 1em;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .number_likes {
+    font-size: 1em;
+  }
 }
 
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .heart_icon {
@@ -265,11 +370,26 @@ main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .
   font-size: 1.3em;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .preview_info .heart_icon {
+    font-size: 1em;
+  }
+}
+
 main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .roundedCorner_img {
-  width: 20em;
-  height: 20em;
+  width: 100%;
+  height: 22em;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_works .photographer_gallery .gallery_item .lightbox_preview .roundedCorner_img {
+    height: 12em;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 main .photographer_works .sorting {
@@ -277,6 +397,7 @@ main .photographer_works .sorting {
 }
 
 main .bground {
+  display: none;
   margin: auto;
   width: 25em;
   position: relative;
