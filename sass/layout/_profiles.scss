@@ -5,9 +5,21 @@
     color: $primary_color;
 }
 
-header {
+.profile_header {
+    @include mobile {
+        margin: 0;
+        max-width: 100%;
+    }
     .header_logo {
         margin-top: 1em;
+        @include mobile {
+            margin-top: 2em;
+        }
+            img {
+                @include mobile {
+                    height: 2em;
+                }
+            }
     }
 }
 
