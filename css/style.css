@@ -143,6 +143,11 @@ main .photographer_presentation {
   margin: 2em 0 1em 0;
 }
 
+main .photographer_presentation .rounded_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main .photographer_presentation .profile_picture {
   display: -webkit-box;
   display: -ms-flexbox;

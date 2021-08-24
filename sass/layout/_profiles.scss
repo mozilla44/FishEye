@@ -18,6 +18,9 @@ main {
         display: flex;
         background-color: $tertiary_color;
         margin: 2em 0 1em 0;
+        .rounded_img {
+            object-fit: cover;
+        }
         .profile_picture {
             display: flex;
             flex-grow: 1;
