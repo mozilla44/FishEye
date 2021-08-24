@@ -140,6 +140,7 @@ body main #photographers_section .photographer_card .tags_links {
 @media all and (min-width: 320px) and (max-width: 450px) {
   .profile_header .header_logo {
     margin-top: 2em;
+    margin-left: 1em;
   }
 }
 
@@ -160,6 +161,13 @@ main .photographer_presentation {
   display: flex;
   background-color: #FAFAFA;
   margin: 2em 0 1em 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation {
+    background-color: inherit;
+    margin-top: 0;
+  }
 }
 
 main .photographer_presentation .rounded_img {
@@ -186,11 +194,34 @@ main .photographer_presentation .profile_picture .profile_pic {
   margin-right: 3em;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .profile_picture {
+    height: 6.5em;
+    width: 6.5em;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .profile_picture .rounded_img {
+    height: 6.5em;
+    width: 6.5em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 0;
+  }
+}
+
 main .photographer_presentation #contact_btn {
   background-color: #901C1C;
   margin-top: 2.5em;
   color: white;
   font-size: 1em;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation #contact_btn {
+    display: none;
+  }
 }
 
 main .photographer_presentation .photographer_details {
@@ -204,10 +235,24 @@ main .photographer_presentation .photographer_details {
   padding-left: 1em;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .photographer_details {
+    padding: 0;
+    max-width: 70%;
+  }
+}
+
 main .photographer_presentation .photographer_details .photographer_name {
   color: #DB8876;
   font-size: 3em;
   margin-bottom: 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .photographer_presentation .photographer_details .photographer_name {
+    margin-top: 0.5em;
+    font-size: 2.3em;
+  }
 }
 
 main .photographer_presentation .photographer_details .photographer_location {
@@ -297,6 +342,7 @@ main .photographer_works .sorting {
 }
 
 main .bground {
+  display: none;
   margin: auto;
   width: 25em;
   position: relative;
