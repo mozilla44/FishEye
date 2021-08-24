@@ -200,6 +200,7 @@ main .photographer_presentation .profile_picture .profile_pic {
 
 @media all and (min-width: 320px) and (max-width: 450px) {
   main .photographer_presentation .profile_picture {
+    margin-top: 2em;
     height: 6.5em;
     width: 6.5em;
   }
@@ -224,10 +225,9 @@ main .photographer_presentation #contact_btn {
 
 @media all and (min-width: 320px) and (max-width: 450px) {
   main .photographer_presentation #contact_btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     position: fixed;
+    -webkit-transform: none;
+            transform: none;
     bottom: 2em;
     left: 30%;
     right: 30%;

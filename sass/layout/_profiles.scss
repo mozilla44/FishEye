@@ -53,6 +53,7 @@ main {
         }
         .profile_picture {
             @include mobile {
+                margin-top: 2em;
                 height: 6.5em;
                 width: 6.5em;
             }
@@ -67,8 +68,8 @@ main {
         }
         #contact_btn {
             @include mobile {
-                display: flex;
-                position: fixed;
+                 position: fixed;
+                 transform: none;
                 bottom: 2em;
                 left: 30%;
                 right: 30%;
