@@ -68,14 +68,15 @@ main {
         }
         #contact_btn {
             @include mobile {
-                 position: fixed;
-                 transform: none;
+                position: fixed;
+                transform: none;
+                width: 100%;
                 bottom: 2em;
                 left: 30%;
                 right: 30%;
                 height: 2em;
                 width: 7.5em;
-                text-align: center;
+                /* text-align: center; */
             }
             background-color: $primary_color;
             margin-top: 2.5em;

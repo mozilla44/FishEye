@@ -58,6 +58,7 @@ body #top_button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 
 body header {
@@ -79,7 +80,6 @@ body main #page_title {
 
 body main #photographers_section {
   margin: 0 3em 0 3em;
-  /* border: 3px solid green; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +102,6 @@ body main #photographers_section .photographer_card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 3px solid red; */
   text-align: center;
   margin: 2em 0 2em 0;
 }
@@ -228,12 +227,13 @@ main .photographer_presentation #contact_btn {
     position: fixed;
     -webkit-transform: none;
             transform: none;
+    width: 100%;
     bottom: 2em;
     left: 30%;
     right: 30%;
     height: 2em;
     width: 7.5em;
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
