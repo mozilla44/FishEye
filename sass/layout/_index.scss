@@ -7,6 +7,30 @@ body {
         display: none;
     }
     header {
+        @include mobile {
+            max-width: 90vw;
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+                a img {
+                    height: 2em;
+                }
+                nav {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 2em;
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 0;
+                            margin: auto;
+                            justify-content: center;
+                                li {
+                                    margin: 0.1em;
+                                }
+                        }
+                }
+        }
     display: flex;
     width: 65em;
     justify-content: space-between;
@@ -14,7 +38,17 @@ body {
     }
 
     main {
+        @include mobile {
+            position: relative;
+        }
         #page_title {
+            @include mobile {
+                margin: 0;
+                font-size: 1em;
+                position: absolute;
+                top: -8em;
+                right: 2em;
+            }
             margin: 1em 3em 1em 1.5em;
             font-weight: 100;
             color: $primary_color;
