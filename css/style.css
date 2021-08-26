@@ -51,6 +51,11 @@ body {
   max-height: 100vh;
 }
 
+body .rounded_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body #top_button {
   display: -webkit-box;
   display: -ms-flexbox;
