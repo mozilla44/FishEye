@@ -256,3 +256,14 @@ main {
             }
     }
 }
+
+
+.bground {
+    @include mobile {
+        width: 90vw !important;
+    }
+}
+
+.errorMesage {
+    color: white;
+}

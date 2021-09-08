@@ -47,7 +47,7 @@
                     src="../images/Sample Photos/Photographers ID Photos/MimiKeel.jpg" class="rounded_img profile_pic">
             </div>
 
-            
+
 
 
         </section>
@@ -111,7 +111,7 @@
             <span id="close_form" aria-label="Close contact form"><i class="fas fa-times"></i></span>
             <a href="#" class="close"></a>
             <div class="modal_content">
-                <form name="form" id="contact_form" class="form" action="index.html">
+                <form name="form" id="contact_form" class="form" action="" onsubmit="return validateContact()">
                     <h1 class="contact_name">Contactez-moi</h1>
                     <h2 class="modal_photographer_name">Mimi Keel</h2>
                     <div class="formData" id="input_first">
@@ -128,7 +128,7 @@
                         <div class="formData" id="input_email">
                             <p class="input_name">email</p>
                             <label for="email"></label>
-                            <input class="text-control" type="email" id="email" name="email">
+                            <input class="text-control" type="" id="email" name="email">
                             <p id="errorEmail" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_message">
@@ -139,8 +139,8 @@
                             <p id="errorFormMesage" class="errorMesage"></p>
                         </div>
                         <div id="send_btn">
-                        <input class="btn btn_primary" id="contact-submit-btn" type="submit" role="button"
-                            aria-label="Send" value="Envoyer" onsubmit="return validateContact()">
+                            <input class="btn btn_primary" id="contact-submit-btn" type="submit" role="button"
+                                aria-label="Send" value="Envoyer" onclick="validateContact()">
                         </div>
                     </div>
                 </form>

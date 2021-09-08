@@ -548,6 +548,16 @@ main .bground #close_form i {
   font-size: 2em;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  .bground {
+    width: 90vw !important;
+  }
+}
+
+.errorMesage {
+  color: white;
+}
+
 body ul a {
   text-decoration: none;
 }
