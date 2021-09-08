@@ -522,6 +522,7 @@ main .bground #send_btn {
 main .bground #contact-submit-btn {
   margin: 2em 0 2em 0;
   height: 3em;
+  cursor: pointer;
 }
 
 main .bground #form_message {
@@ -552,6 +553,11 @@ main .bground #close_form i {
   top: 1.3em;
   right: 1.5em;
   font-size: 2em;
+  cursor: pointer;
+}
+
+#contact_btn {
+  cursor: pointer;
 }
 
 body ul a {

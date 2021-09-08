@@ -195,7 +195,7 @@ main {
         @include mobile {
             width: 90vw !important;
             position: absolute !important;
-            top: 0 !important;
+            top: 0 !important ;
             left: 0 !important;
             right: 0!important;
         }
@@ -232,6 +232,7 @@ main {
         #contact-submit-btn {
             margin: 2em 0 2em 0;
             height: 3em;
+            cursor: pointer;
         }
         #form_message {
             height: 8em;
@@ -262,4 +263,9 @@ main {
     top: 1.3em;
     right: 1.5em;
     font-size: 2em;
+    cursor: pointer;
+}
+
+#contact_btn {
+    cursor: pointer;
 }
