@@ -558,6 +558,14 @@ main .bground #close_form i {
   color: white;
 }
 
+#close_modal_btn {
+  color: white;
+  position: absolute;
+  top: 1.3em;
+  right: 1.5em;
+  font-size: 2em;
+}
+
 body ul a {
   text-decoration: none;
 }
