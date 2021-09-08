@@ -52,9 +52,11 @@ function validateContact() {
 let launchModalBtn = document.getElementById("contact_btn");
 launchModalBtn.addEventListener("click" , launchModal)
 
+
 function launchModal (){
   let modalBody = document.getElementById("modal");
   modalBody.style.display = "flex";
+  
 }
 
 /* close modal  */
@@ -65,5 +67,6 @@ let modalBody = document.getElementById("modal");
 function logTest() {
   modalBody.style.display = "none";
   console.log("log test");
+  
 
 }

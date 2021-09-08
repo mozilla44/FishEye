@@ -458,7 +458,13 @@ main .photographer_works .sorting {
 }
 
 main .bground {
-  display: none;
+  position: absolute !important;
+  top: 3em;
+  left: 25vw;
+  right: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
   width: 25em;
   position: relative;

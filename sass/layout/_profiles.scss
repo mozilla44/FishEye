@@ -183,7 +183,12 @@ main {
     }
 
     .bground {
-        display: none;
+        position: absolute !important;
+        top: 3em;
+        left: 25vw;
+        right: 25vw;
+        
+        display: flex;
         margin: auto;
         width: 25em;
         position: relative;
@@ -243,8 +248,6 @@ main {
     }
 }
 
-.bground {
-}
 
 .errorMesage {
     color: white;
