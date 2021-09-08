@@ -1,5 +1,3 @@
-/* Listen to submit btn */
-
 /* listen for changes in form inputs */
 document.getElementById("first").addEventListener("change" , validateContact);
 document.getElementById("last").addEventListener("change" , validateContact)
@@ -49,9 +47,23 @@ function validateContact() {
 
 }
 
-/* close modal  */
-/* document.querySelectorAll('.close').addEventListener("click", closeModal);
+/* laucnh modal */
 
-function closeModal {
-document.querySelectorAll(".bground").style.display = "none";
-} */
+let launchModalBtn = document.getElementById("contact_btn");
+launchModalBtn.addEventListener("click" , launchModal)
+
+function launchModal (){
+  let modalBody = document.getElementById("modal");
+  modalBody.style.display = "flex";
+}
+
+/* close modal  */
+let closeBtn = document.getElementById("close_modal_btn");
+closeBtn.addEventListener("click" , logTest);
+let modalBody = document.getElementById("modal");
+
+function logTest() {
+  modalBody.style.display = "flex";
+  console.log("log test");
+
+}

@@ -184,7 +184,9 @@ body main #photographers_section .photographer_card .tags_links {
   color: #901C1C;
 }
 
-.previous, .next, .close_lightbox {
+.previous,
+.next,
+.close_lightbox {
   display: none;
 }
 
@@ -456,45 +458,21 @@ main .photographer_works .sorting {
 }
 
 main .bground {
-  /* display: none; */
+  display: none;
   margin: auto;
   width: 25em;
   position: relative;
   padding-top: 2em;
 }
 
-main .bground .close {
-  position: absolute;
-  right: 2em;
-  top: 2.5em;
-  width: 2em;
-  height: 2em;
-  opacity: 0.8;
+@media all and (min-width: 320px) and (max-width: 450px) {
+  main .bground {
+    width: 90vw !important;
+  }
 }
 
-main .bground .close:hover {
-  opacity: 1;
-}
-
-main .bground .close:before, main .bground .close:after {
-  position: absolute;
-  content: ' ';
-  height: 2.0625em;
-  width: 0.20em;
-  background-color: white;
-}
-
-main .bground .close:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-main .bground .close:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-main .bground .contact_name, main .bground .modal_photographer_name {
+main .bground .contact_name,
+main .bground .modal_photographer_name {
   font-size: 2em;
   margin: 0 0 0.5em;
 }
@@ -503,6 +481,14 @@ main .bground .input_name {
   font-size: 1.2em;
   margin: 0.2em;
   font-weight: 500;
+}
+
+main .bground .modal_content {
+  width: 100%;
+}
+
+main .bground .formData {
+  width: 100%;
 }
 
 main .bground .text-control {
@@ -546,12 +532,6 @@ main .bground #close_form i {
   color: white;
   /* border: 3px solid red; */
   font-size: 2em;
-}
-
-@media all and (min-width: 320px) and (max-width: 450px) {
-  .bground {
-    width: 90vw !important;
-  }
 }
 
 .errorMesage {
