@@ -183,10 +183,15 @@ main {
     }
 
     .bground {
+<<<<<<< Updated upstream
         position: absolute !important;
         top: 3em;
         left: 25vw;
         right: 25vw;
+=======
+        position: absolute;
+        top: 3em !important;
+>>>>>>> Stashed changes
         
         display: flex;
         margin: auto;
@@ -194,7 +199,15 @@ main {
         position: relative;
         padding-top: 2em;
         @include mobile {
+<<<<<<< Updated upstream
             width: 90vw !important;
+=======
+            width: 90vw ;
+            
+            top: 1em;
+            right: 0.7em;
+            left: 0em;
+>>>>>>> Stashed changes
         }
 
         .contact_name,
