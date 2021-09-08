@@ -63,7 +63,7 @@ closeBtn.addEventListener("click" , logTest);
 let modalBody = document.getElementById("modal");
 
 function logTest() {
-  modalBody.style.display = "flex";
+  modalBody.style.display = "none";
   console.log("log test");
 
 }
