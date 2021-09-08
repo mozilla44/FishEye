@@ -12,9 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="icon" type="image/png" href="../images/favicon.png">
-    <script>
-        /* JAVASCRIPT GOES HERE */
-    </script>
+    
     <meta name="author" content="Antoine Declercq">
     <title>FishEye</title>
 </head>
@@ -49,7 +47,7 @@
                     src="../images/Sample Photos/Photographers ID Photos/MimiKeel.jpg" class="rounded_img profile_pic">
             </div>
 
-            
+
 
 
         </section>
@@ -109,11 +107,10 @@
             </div>
         </section>
         <!-- MODAL contact -->
-        <section class="bground">
-            <span id="close_form" aria-label="Close contact form"><i class="fas fa-times"></i></span>
-            <a href="#" class="close"></a>
+        <section class="bground" id="modal">
+            <i class="fas fa-times" id="close_modal_btn"></i>
             <div class="modal_content">
-                <form name="form" id="contact_form" class="form" action="index.html">
+                <form name="form" id="contact_form" class="form" action="" onsubmit="return validateContact()">
                     <h1 class="contact_name">Contactez-moi</h1>
                     <h2 class="modal_photographer_name">Mimi Keel</h2>
                     <div class="formData" id="input_first">
@@ -130,7 +127,7 @@
                         <div class="formData" id="input_email">
                             <p class="input_name">email</p>
                             <label for="email"></label>
-                            <input class="text-control" type="email" id="email" name="email">
+                            <input class="text-control" type="" id="email" name="email" placeholder="adresse@email.com">
                             <p id="errorEmail" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_message">
@@ -141,8 +138,8 @@
                             <p id="errorFormMesage" class="errorMesage"></p>
                         </div>
                         <div id="send_btn">
-                        <input class="btn btn_primary" id="contact-submit-btn" type="submit" role="button"
-                            aria-label="Send" value="Envoyer" onsubmit="return validateContact()">
+                            <input class="btn btn_primary" id="contact-submit-btn" type="submit" role="button"
+                                aria-label="Send" value="Envoyer" onclick="validateContact()">
                         </div>
                     </div>
                 </form>
@@ -150,6 +147,7 @@
         </section>
         <!-- END MODAL -->
     </main>
+    <script src="../scripts/contact_modal.js"></script>
 </body>
 
 </html>

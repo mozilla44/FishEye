@@ -3,10 +3,11 @@
 .fa-times,
 .fa-heart {
     color: $primary_color;
-    
 }
 
-.previous,.next,.close_lightbox{
+.previous,
+.next,
+.close_lightbox {
     display: none;
 }
 .profile_header {
@@ -20,11 +21,11 @@
             margin-top: 2em;
             margin-left: 1em;
         }
-            img {
-                @include mobile {
-                    height: 2em;
-                }
+        img {
+            @include mobile {
+                height: 2em;
             }
+        }
     }
 }
 
@@ -57,14 +58,14 @@ main {
                 height: 6.5em;
                 width: 6.5em;
             }
-                .rounded_img {
-                    @include mobile {
-                        height: 5.5em;
-                        width: 5.5em;
-                        object-fit: cover;
-                        margin-right: 0;
-                    }
+            .rounded_img {
+                @include mobile {
+                    height: 5.5em;
+                    width: 5.5em;
+                    object-fit: cover;
+                    margin-right: 0;
                 }
+            }
         }
         #contact_btn {
             @include mobile {
@@ -108,7 +109,6 @@ main {
                     padding: 0;
                 }
             }
-            
         }
     }
 
@@ -184,75 +184,82 @@ main {
 
     .bground {
         display: none;
+        position: absolute !important;
+        top: 3em;
+        left: 25vw;
+        right: 25vw;
         margin: auto;
         width: 25em;
         position: relative;
         padding-top: 2em;
-        .close {
+        @include mobile {
+            width: 90vw !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0!important;
+        }
+
+        .contact_name,
+        .modal_photographer_name {
+            font-size: 2em;
+            margin: 0 0 0.5em;
+        }
+        .input_name {
+            font-size: 1.2em;
+            margin: 0.2em;
+            font-weight: 500;
+        }
+        .modal_content {
+            width: 100%;
+        }
+        .formData {
+            width: 100%;
+        }
+        .text-control {
+            width: 100%;
+            height: 3em;
+            border-radius: 0.5em;
+            border: none;
+        }
+        #contact_form {
+            padding: 0 1.5em 0 1em;
+        }
+        #send_btn {
+            display: flex;
+            justify-content: center;
+        }
+        #contact-submit-btn {
+            margin: 2em 0 2em 0;
+            height: 3em;
+        }
+        #form_message {
+            height: 8em;
+        }
+        #close_form {
+            /* border: 3px solid blue; */
             position: absolute;
             right: 2em;
-            top: 2.5em;
-            width: 2em;
-            height: 2em;
-            opacity: 0.8;
-          }
-          .close:hover {
-            opacity: 1;
-          }
-          .close:before, .close:after {
-            position: absolute;
-            content: ' ';
-            height: 2.0625em;
-            width: 0.20em;
-            background-color: white;
-          }
-          .close:before {
-            transform: rotate(45deg);
-          }
-          .close:after {
-            transform: rotate(-45deg);
-          }
-          
-            .contact_name,.modal_photographer_name {
+            top: 2em;
+            display: none;
+            i {
+                color: white;
+                /* border: 3px solid red; */
                 font-size: 2em;
-                margin: 0 0 0.5em ;
             }
-            .input_name {
-                font-size: 1.2em;
-                margin: 0.2em;
-                font-weight: 500;
-            }
-            .text-control {
-                width: 100%;
-                height: 3em;
-                border-radius: 0.5em;
-                border: none;
-            }
-            #contact_form {
-                padding: 0 1.5em 0 1em;
-            }
-            #send_btn {
-                display: flex;
-                justify-content: center;
-            }
-            #contact-submit-btn {
-                margin: 2em 0 2em 0;
-                height: 3em;
-            }
-            #form_message {
-                height: 8em;
-            }
-            #close_form {
-                /* border: 3px solid blue; */
-                position: absolute;
-                right: 2em;
-                top: 2em;
-                display: none;
-                    i {
-                        color: white;
-                        /* border: 3px solid red; */
-                        font-size: 2em;
-                    }
-            }
+        }
     }
+}
+
+
+.errorMesage {
+    color: white;
+}
+
+#close_modal_btn {
+    color: white;
+    position: absolute;
+    top: 1.3em;
+    right: 1.5em;
+    font-size: 2em;
 }
