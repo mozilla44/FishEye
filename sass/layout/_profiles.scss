@@ -187,6 +187,7 @@ main {
         top: 3em;
         left: 25vw;
         right: 25vw;
+        
         display: flex;
         margin: auto;
         width: 25em;
@@ -194,10 +195,6 @@ main {
         padding-top: 2em;
         @include mobile {
             width: 90vw !important;
-            position: absolute !important;
-            top: 1em;
-            right: 0.7em;
-            left: 0em;
         }
 
         .contact_name,
