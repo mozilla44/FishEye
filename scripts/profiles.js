@@ -8,3 +8,4 @@ class Media {
         this.date = media.date;
         this.price = media.price;
     }
+}
