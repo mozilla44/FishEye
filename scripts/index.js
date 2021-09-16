@@ -58,6 +58,15 @@ fetch('../data.json')
     console.log(err)
 })
 
+
+fetch('../data.json')
+.then(function(response) {
+if(response.ok) {
+response.json().then(function(result){
+let resultat = result;
+photographes=resultat.photographers;
+console.log(photographes);
+
 /* methode sans fleches 
 
 fetch('../data.json')
@@ -71,3 +80,11 @@ fetch('../data.json')
         console.log(err)
     })
 */
+
+fetch('../data.json')
+.then(function(response) {
+if(response.ok) {
+response.json().then(function(result){
+let resultat = result;
+photographes=resultat.photographers;
+console.log(photographes);
