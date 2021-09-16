@@ -1,4 +1,4 @@
-class Photographer {
+/* class Photographer {
     constructor (data) {
         this.name = data.name;
         this.id = data.id;
@@ -9,7 +9,18 @@ class Photographer {
         this.price = data.price;
         this.portrait = data.portrait;
     }
+    function createPhotographerCard (){
+        for (let i = 0; i < photographers.length; i++){
+        let photographer = document.createElement('a');
+            let name = document.createElement('h2');
+            let id = document.createElement('p');
+            let  = document.createElement('p');
+            let  = document.createElement('p');
+            let  = document.createElement('img');
+            let  = document.createElement('p');
+        }
 }
+} */
 
 
 
@@ -28,11 +39,10 @@ function createPhotographerCard (){
 
 /* test fetch */
     
-fetch('/data.json')
+fetch('../data.json')
 .then(res => res.json())
 .then((data) => {
     const photographers = data.photographers
-
     console.log("====")
     console.log(photographers)
     console.log("====")
@@ -50,7 +60,7 @@ fetch('/data.json')
 
 /* methode sans fleches 
 
-fetch('/data.json')
+fetch('../data.json')
     .then(function(res) {
         return res.json()
     })
