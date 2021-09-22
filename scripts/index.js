@@ -1,3 +1,34 @@
+
+/* test sans fetch  */
+
+function populateTest (){
+    let names = document.getElementsByClassName('photographer_name');
+    let locations = document.getElementsByClassName("photographer_location");
+    for (let i = 0; i < names.length; i++) {
+        names[i].innerHTML = "John Doe";
+    }
+    for (let i = 0; i < locations.length; i++) {
+        locations[i].innerHTML = "London, UK";
+    }
+}
+
+/* test avec fetch */
+     
+fetch('./data.json')
+.then(res => res.json())
+.then((data) => {
+    let names = document.getElementsByClassName('photographer_name');
+    for (let i = 0; i < names.length; i++) {
+        names[i].innerHTML = "John Doe";
+    }
+
+})
+.catch(function(err) {
+    console.log(err)
+})
+
+
+
 /* class Photographer {
     constructor (data) {
         this.name = data.name;
@@ -9,6 +40,7 @@
         this.price = data.price;
         this.portrait = data.portrait;
     }
+
     function createPhotographerCard (){
         for (let i = 0; i < photographers.length; i++){
         let photographer = document.createElement('a');
@@ -24,7 +56,7 @@
 
 
 
-function createPhotographerCard (){
+/* function createPhotographerCard (){
     for (let i = 0; i < photographers.length; i++){
     let photographer = document.createElement('a');
         let name = document.createElement('h2');
@@ -35,38 +67,9 @@ function createPhotographerCard (){
         let  = document.createElement('p');
     }
         
-}
-
-/* test fetch */
-    
-fetch('../data.json')
-.then(res => res.json())
-.then((data) => {
-    const photographers = data.photographers
-    console.log("====")
-    console.log(photographers)
-    console.log("====")
-
-    for (let i = 0; i < photographers.length; i++) {
-        const Photographers = new Photographer(photographers[i])
-
-        console.log(Photographers)
-    }
-
-})
-.catch(function(err) {
-    console.log(err)
-})
+} */
 
 
-fetch('../data.json')
-.then(function(response) {
-if(response.ok) {
-response.json().then(function(result){
-let resultat = result;
-photographes=resultat.photographers;
-console.log(photographes);
-console.log("ca marche")}
 
 /* methode sans fleches 
 
@@ -82,10 +85,3 @@ fetch('../data.json')
     })
 */
 
-fetch('../data.json')
-.then(function(response) {
-if(response.ok) {
-response.json().then(function(result){
-let resultat = result;
-photographes=resultat.photographers;
-console.log(photographes);
