@@ -22,7 +22,7 @@ fetch('../data.json')
         console.log(data.photographers)
         let names = document.getElementsByClassName('photographer_name');
         for (let i = 0; i < names.length; i++) {
-            names[i].innerHTML = data.photographers;
+            names[i].innerHTML = data.photographers[i].name;
         }
     })
     .catch(function(err) {
