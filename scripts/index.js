@@ -1,7 +1,7 @@
 
 /* test sans fetch  */
 
-function populateTest (){
+/* function populateTest (){
     let names = document.getElementsByClassName('photographer_name');
     let locations = document.getElementsByClassName("photographer_location");
     for (let i = 0; i < names.length; i++) {
@@ -10,22 +10,10 @@ function populateTest (){
     for (let i = 0; i < locations.length; i++) {
         locations[i].innerHTML = "London, UK";
     }
-}
+} */
 
 /* test avec fetch */
      
-fetch('./data.json')
-.then(res => res.json())
-.then((data) => {
-    let names = document.getElementsByClassName('photographer_name');
-    for (let i = 0; i < names.length; i++) {
-        names[i].innerHTML = "John Doe";
-    }
-
-})
-.catch(function(err) {
-    console.log(err)
-})
 
 
 
@@ -71,7 +59,7 @@ fetch('./data.json')
 
 
 
-/* methode sans fleches 
+
 
 fetch('../data.json')
     .then(function(res) {
@@ -79,9 +67,13 @@ fetch('../data.json')
     })
     .then(function(data) {
         console.log(data)
+        let names = document.getElementsByClassName('photographer_name');
+        for (let i = 0; i < names.length; i++) {
+            names[i].innerHTML = "John Doe";
+        }
     })
     .catch(function(err) {
         console.log(err)
     })
-*/
+
 
