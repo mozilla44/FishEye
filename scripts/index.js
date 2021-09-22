@@ -66,6 +66,7 @@ response.json().then(function(result){
 let resultat = result;
 photographes=resultat.photographers;
 console.log(photographes);
+console.log("ca marche")}
 
 /* methode sans fleches 
 
