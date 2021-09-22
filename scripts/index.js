@@ -14,7 +14,20 @@
 
 /* test avec fetch */
      
-
+fetch('../data.json')
+    .then(function(res) {
+        return res.json()
+    })
+    .then(function(data) {
+        console.log(data.photographers)
+        let names = document.getElementsByClassName('photographer_name');
+        for (let i = 0; i < names.length; i++) {
+            names[i].innerHTML = data.photographers;
+        }
+    })
+    .catch(function(err) {
+        console.log(err)
+    })
 
 
 /* class Photographer {
@@ -61,19 +74,6 @@
 
 
 
-fetch('../data.json')
-    .then(function(res) {
-        return res.json()
-    })
-    .then(function(data) {
-        console.log(data)
-        let names = document.getElementsByClassName('photographer_name');
-        for (let i = 0; i < names.length; i++) {
-            names[i].innerHTML = "John Doe";
-        }
-    })
-    .catch(function(err) {
-        console.log(err)
-    })
+
 
 
