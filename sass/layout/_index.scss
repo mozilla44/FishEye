@@ -77,6 +77,11 @@ body {
                         .tags_links {
                             padding: 0;
                         }
+                        .photographer_location {
+                            display: flex;
+                            justify-content: center;
+                            color: $primary_color;
+                        }
                 }
         }
     }

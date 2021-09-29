@@ -177,6 +177,16 @@ body main #photographers_section .photographer_card .tags_links {
   padding: 0;
 }
 
+body main #photographers_section .photographer_card .photographer_location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #901C1C;
+}
+
 .fa-chevron-right,
 .fa-chevron-left,
 .fa-times,

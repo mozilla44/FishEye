@@ -21,14 +21,19 @@ fetch('../data.json')
     .then(function(data) {
         console.log(data.photographers)
         let names = document.getElementsByClassName('photographer_name');
-        let locations = document.getElementsByClassName("photographer_location")
+        let cities = document.getElementsByClassName("photographer_city");
+        let countries = document.getElementsByClassName("photographer_country");
+        let taglines = document.getElementsByClassName("photographer_tagline");
+        let prices = document.getElementsByClassName("photographer_price")
 
         for (let i = 0; i < names.length; i++) {
             names[i].innerHTML = data.photographers[i].name;
+            cities[i].innerHTML = data.photographers[i].city +",";
+            countries[i].innerHTML = "&nbsp" + data.photographers[i].country;
+            taglines[i].innerHTML = data.photographers[i].tagline;
+            prices[i].innerHTML = data.photographers[i].price + ("€/jour");
         }
-        for (let i = 0; i < locations.length; i++) {
-            locations[i].innerHTML = data.photographers[i].city;
-        }
+       
 
     })
     .catch(function(err) {
