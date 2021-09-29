@@ -25,7 +25,7 @@ fetch('../data.json')
         let countries = document.getElementsByClassName("photographer_country");
         let taglines = document.getElementsByClassName("photographer_tagline");
         let prices = document.getElementsByClassName("photographer_price")
-        let profilePic = document.getElementsByClassName("rounded_img")
+        /* let profilePic = document.getElementsByClassName("rounded_img") */
 
         for (let i = 0; i < names.length; i++) {
             names[i].innerHTML = data.photographers[i].name;
@@ -33,7 +33,7 @@ fetch('../data.json')
             countries[i].innerHTML = "&nbsp" + data.photographers[i].country;
             taglines[i].innerHTML = data.photographers[i].tagline;
             prices[i].innerHTML = data.photographers[i].price + ("€/jour");
-            profilePic[i].setAttribute("src" "")
+            /* profilePic[i].setAttribute("src" "") */
         }
        
 
