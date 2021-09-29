@@ -149,6 +149,17 @@ body main #photographers_section {
           justify-content: space-between;
 }
 
+@media all and (min-width: 320px) and (max-width: 450px) {
+  body main #photographers_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 body main #photographers_section .photographer_card {
   min-width: 30%;
   display: -webkit-box;
