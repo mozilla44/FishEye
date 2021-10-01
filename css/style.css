@@ -581,6 +581,12 @@ main .bground #close_form i {
   cursor: pointer;
 }
 
+body {
+  /* img {
+        
+      } */
+}
+
 body ul a {
   text-decoration: none;
 }
@@ -619,5 +625,9 @@ body .tags_links li a {
 .profile {
   text-decoration: none;
   color: #DB8876;
+}
+
+.testclass {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

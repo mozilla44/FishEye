@@ -1,20 +1,39 @@
+/* create html card */
 
-/* test sans fetch  */
+// TEST DU FOREACH 
 
-/* function populateTest (){
-    let names = document.getElementsByClassName('photographer_name');
-    let locations = document.getElementsByClassName("photographer_location");
-    for (let i = 0; i < names.length; i++) {
-        names[i].innerHTML = "John Doe";
-    }
-    for (let i = 0; i < locations.length; i++) {
-        locations[i].innerHTML = "London, UK";
-    }
-} */
+fetch('../data.json')
+    .then(function(res) {
+        return res.json()
+    })
+    .then(function(data) {
+        let photographerData = data.photographers
+        photographerData.forEach(photographer => {
+            console.log(photographer.name)
+            
+            let newDiv = document.createElement("div");
+            newDiv.classList.add("testclass");
+            let section = document.getElementById("photographers_section")
+            section.appendChild(newDiv);
+            newDiv.innerHTML = photographer.name;
+            
+           
+
+        });
+    })
+    .catch(function(err) {
+        console.log(err)
+    })
+
+
+
+
+
+
 
 /* test avec fetch */
      
-fetch('../data.json')
+/* fetch('../data.json')
     .then(function(res) {
         return res.json()
     })
@@ -25,7 +44,7 @@ fetch('../data.json')
         let countries = document.getElementsByClassName("photographer_country");
         let taglines = document.getElementsByClassName("photographer_tagline");
         let prices = document.getElementsByClassName("photographer_price")
-        /* let profilePic = document.getElementsByClassName("rounded_img") */
+        //let profilePic = document.getElementsByClassName("rounded_img")
 
         for (let i = 0; i < names.length; i++) {
             names[i].innerHTML = data.photographers[i].name;
@@ -33,14 +52,14 @@ fetch('../data.json')
             countries[i].innerHTML = "&nbsp" + data.photographers[i].country;
             taglines[i].innerHTML = data.photographers[i].tagline;
             prices[i].innerHTML = data.photographers[i].price + ("€/jour");
-            /* profilePic[i].setAttribute("src" "") */
+            // profilePic[i].setAttribute("src" "") 
         }
        
 
     })
     .catch(function(err) {
         console.log(err)
-    })
+    }) */
 
 
 /* class Photographer {
