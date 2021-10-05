@@ -11,11 +11,27 @@ fetch('../data.json')
         photographerData.forEach(photographer => {
             console.log(photographer.name)
             
+            //crer les divs 
             let newDiv = document.createElement("div");
+            let newdiv2 = document.createElement("div")
+            
+            //add class to creted divs
             newDiv.classList.add("testclass");
-            let section = document.getElementById("photographers_section")
-            section.appendChild(newDiv);
+            newdiv2.classList.add("testclas2")
+
+            //add innerHTML to created divs
             newDiv.innerHTML = photographer.name;
+            newdiv2.innerHTML = photographer.city;
+
+            //append div1 to main section
+            let section = document.getElementById("photographers_section")
+            section.appendChild(newDiv );
+
+            //append div2 to div1 (casse la boucle)
+            let div1 = document.getElementsByClassName(".testclass")
+            div1.appendChild(newdiv2) //casse la boucle  
+            /* section.appendChild(newdiv2) // fonctionne mais pas ce que je veux faire */
+            
             
            
 
