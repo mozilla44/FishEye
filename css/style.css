@@ -182,6 +182,7 @@ body main #photographers_section .photographer_card .photographer_info, body mai
 
 body main #photographers_section .photographer_card .photographer_name {
   margin: 0.5em 0 0 0;
+  color: #DB8876;
 }
 
 body main #photographers_section .photographer_card .tags_links {
