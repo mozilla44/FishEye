@@ -58,7 +58,7 @@ class Photographer {
         // foreach ici ? 
     }
 }
-}
+
 
 
 
