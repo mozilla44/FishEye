@@ -67,6 +67,8 @@ fetch('../data.json')
         photographerPrice.innerHTML = photographer.price + "€/jour";
         photographerInfo.appendChild(photographerPrice)
 
+        //ID + TAG pour chaque photgrapher
+
     });
     })
 .catch(function (err) {
