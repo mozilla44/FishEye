@@ -1,13 +1,50 @@
 
 //modal in poo
 
-fetch('../data.json')
-.then(function(res){
-  return res.json()
-})
-.then (function (data){
-  console.log("test")
-})
+const modalForm = (profile) => {
+
+  // create html map
+
+  let bground = document.createElement("section")
+  bground.classList.add("bground")
+  bground.setAttribute("id" , "close_modal_btn")
+  let main = document.getElementById("main");
+  main.appendChild(bground)
+  
+  let closeIcon  = document.createElement("i")
+  closeIcon.classList.add("fas" , "fa-times")
+  closeIcon.setAttribute("id" , "close_modal_btn")
+  bground.appendChild(closeIcon)
+
+  let modalContent = document.createElement("div")
+  modalContent.classList.add("modal_content");
+  bground.appendChild(modalContent)
+
+  let formBody = document.createElement("form")
+  formBody.setAttribute("name" , "form")
+  formBody.setAttribute("id", "contact_form")
+  formBody.setAttribute("class", "form")
+
+  let contactMe = document.createElement("h1")
+  contactMe.classList.add("contact_name")
+  contactMe.innerHTML = "Contactez-moi"
+  formBody.appendChild(contactMe)
+
+  let profileName = document.createElement("h2")
+  profileName.classList.add("modal_photographer_name")
+  profileName.innerHTML = profile.name
+  formBody.appendChild(profileName)
+
+  let firstName = document.createElement("div")
+  firstName.classList.add("FormData")
+  firstName.setAttribute("id" , "input_first")
+  formBody.appendChild(firstName)
+  
+
+
+
+
+}
 
 /* // listen for changes in form inputs 
 document.getElementById("first").addEventListener("change" , validateContact);
