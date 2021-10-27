@@ -480,7 +480,9 @@ main .photographer_works .sorting {
 }
 
 main .bground {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute !important;
   top: 3em;
   left: 25vw;

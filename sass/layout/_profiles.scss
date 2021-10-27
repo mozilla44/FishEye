@@ -183,7 +183,7 @@ main {
     }
 
     .bground {
-        display: none;
+        display: flex;
         position: absolute !important;
         top: 3em;
         left: 25vw;

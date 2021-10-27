@@ -1,11 +1,22 @@
-/* listen for changes in form inputs */
+
+//modal in poo
+
+fetch('../data.json')
+.then(function(res){
+  return res.json()
+})
+.then (function (data){
+  console.log("test")
+})
+
+/* // listen for changes in form inputs 
 document.getElementById("first").addEventListener("change" , validateContact);
 document.getElementById("last").addEventListener("change" , validateContact)
 document.getElementById("email").addEventListener("change", validateContact)
 document.getElementById("form_message").addEventListener("change" , validateContact)
 document.getElementById("contact-submit-btn").addEventListener("onclick" , validateContact)
 
-/* contact form validsation  */
+// contact form validsation  
 function validateContact() {
   let regexName = /^\S\D{2,}$/;
   let regexEmail = /^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]­{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$/;
@@ -47,7 +58,7 @@ function validateContact() {
 
 }
 
-/* laucnh modal */
+// laucnh modal 
 
 let launchModalBtn = document.getElementById("contact_btn");
 launchModalBtn.addEventListener("click" , launchModal)
@@ -59,7 +70,7 @@ function launchModal (){
   
 }
 
-/* close modal  */
+// close modal  
 let closeBtn = document.getElementById("close_modal_btn");
 closeBtn.addEventListener("click" , logTest);
 let modalBody = document.getElementById("modal");
@@ -69,4 +80,4 @@ function logTest() {
   console.log("log test");
   
 
-}
+} */

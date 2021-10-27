@@ -106,46 +106,7 @@
                 </div>
             </div>
         </section>
-        <!-- MODAL contact -->
-        <section class="bground" id="modal">
-            <i class="fas fa-times" id="close_modal_btn"></i>
-            <div class="modal_content">
-                <form name="form" id="contact_form" class="form" action="" onsubmit="return validateContact()">
-                    <h1 class="contact_name">Contactez-moi</h1>
-                    <h2 class="modal_photographer_name">Mimi Keel</h2>
-                    <div class="formData" id="input_first">
-                        <p class="input_name">Prénom</p>
-                        <label for="first"></label>
-                        <input class="text-control" type="text" id="first" name="first" minlength="2">
-                        <p id="errorFirst" class="errorMesage"></p>
-                        <div class="formData" id="input_last">
-                            <p class="input_name">Nom</p>
-                            <label for="last"></label>
-                            <input class="text-control" type="text" id="last" name="last">
-                            <p id="errorLast" class="errorMesage"></p>
-                        </div>
-                        <div class="formData" id="input_email">
-                            <p class="input_name">email</p>
-                            <label for="email"></label>
-                            <input class="text-control" type="" id="email" name="email" placeholder="adresse@email.com">
-                            <p id="errorEmail" class="errorMesage"></p>
-                        </div>
-                        <div class="formData" id="input_message">
-                            <p class="input_name">Votre message</p>
-                            <label for="message"></label>
-                            <textarea class="text-control" type="text" id="form_message" name="message"
-                                aria-label="Your message"></textarea>
-                            <p id="errorFormMesage" class="errorMesage"></p>
-                        </div>
-                        <div id="send_btn">
-                            <input class="btn btn_primary" id="contact-submit-btn" type="submit" role="button"
-                                aria-label="Send" value="Envoyer" onclick="validateContact()">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!-- END MODAL -->
+        
     </main>
     <script src="../scripts/contact_modal.js"></script>
 </body>
