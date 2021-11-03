@@ -8,3 +8,4 @@ questions
 - nested elements in inner html
 - fonction dans constante => lancée quand ?
 -template litterals 
+- lier class et json
