@@ -10,67 +10,34 @@ fetch('../data.json')
     let photographerData = data.photographers
     photographerData.forEach(photographer => {
 
-        //create new photographer card
-        let newPhotographer = document.createElement("div");
-        newPhotographer.classList.add("photographer_card");
-        let section = document.getElementById("photographers_section");
-        section.appendChild(newPhotographer);
+        let tags = "";
+        photographer.tags.forEach(tag =>{
+            tags += `<li><a>#${tag}</a></li>`
+        })
+        
+        document.getElementById("photographers_section").innerHTML +=`<div class="photographer_card">
+    <a class="profile" href="pages/profiles.html?id=${photographer.id}">
+        <img role="img" class="rounded_img" alt=""
+            src="images/sample_photos/Photographers_ID_Photos/${photographer.portrait}">
+    </a>
+    <div class="photographer_info">
+        <h2 class="photographer_name">${photographer.name}</h2>
+        <div class="photographer_location"> 
+            <h3 class="photographer_city">${photographer.city},&nbsp</h3>
+            <h3 class="photographer_country">${photographer.country}</h3>
+        </div>
+        <p class="photographer_tagline">${photographer.tagline}</p>
+        <p class="photographer_price">${photographer.price}€/jour</p>
+    </div>
+    <div class="card_tags">
+        <ul class="tags_links">
+        ${tags}
+        </ul>
+    </div>
+</div>`
 
-        //create photogrpaher link (clicakble img)
-        let photographerLink = document.createElement("a");
-        photographerLink.classList.add("profile");
-        newPhotographer.appendChild(photographerLink);
-
-        //create profile picture
-        let photographerImg = document.createElement("img");
-        photographerImg.classList.add("rounded_img");
-        photographerImg.setAttribute("src", "images/sample_photos/Photographers_ID_Photos/" + photographer.portrait)
-        photographerLink.appendChild(photographerImg);
-
-        //create photogrpaher info div
-        let photographerInfo = document.createElement("div");
-        photographerInfo.classList.add("photographer_info");
-        newPhotographer.appendChild(photographerInfo);
-
-        // create photographer name
-        let photographerName = document.createElement("h2");
-        photographerName.classList.add("photographer_name")
-        photographerName.innerHTML = photographer.name;
-        photographerInfo.appendChild(photographerName)
-
-        //create photographer location div
-        let photographerLocation = document.createElement("div")
-        photographerLocation.classList.add("photographer_location");
-        photographerInfo.appendChild(photographerLocation);
-
-        //create photographer city
-        let photographerCity = document.createElement("h3")
-        photographerCity.classList.add("photographer_city")
-        photographerCity.innerHTML = photographer.city + "," + "&nbsp";
-        photographerLocation.appendChild(photographerCity);
-
-        //create photographer country
-        let photographerCountry = document.createElement("h3")
-        photographerCountry.classList.add("photographer_country")
-        photographerCountry.innerHTML = photographer.country;
-        photographerLocation.appendChild(photographerCountry)
-
-        //create photographer tagline
-        let photographerTagline = document.createElement("p")
-        photographerTagline.classList.add("photographer_tagline")
-        photographerTagline.innerHTML = photographer.tagline;
-        photographerInfo.appendChild(photographerTagline);
-
-        //create photographer price
-        let photographerPrice = document.createElement("p")
-        photographerPrice.classList.add("photographer_price")
-        photographerPrice.innerHTML = photographer.price + "€/jour";
-        photographerInfo.appendChild(photographerPrice)
-
-        //ID + TAG pour chaque photgrapher
-
-    });
-    })
+});
+})
 .catch(function (err) {
     console.log(err)
 })
