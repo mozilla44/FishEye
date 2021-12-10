@@ -1,6 +1,4 @@
 
-//modal in poo
-
 const modalForm = (profile) => {
 
   // create html map

@@ -50,6 +50,8 @@ main {
             align-items: center;
             .profile_pic {
                 margin-right: 3em;
+                height: 12em;
+                width: 12em;
             }
         }
         .profile_picture {
@@ -103,6 +105,7 @@ main {
             }
             .photographer_location {
                 color: $primary_color;
+                display: inline-flex;
             }
             .profile_tags {
                 .tags_links {
@@ -121,6 +124,7 @@ main {
             }
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             .gallery_item {
                 @include mobile {
                     width: 100%;
@@ -268,4 +272,5 @@ main {
 
 #contact_btn {
     cursor: pointer;
+    margin-left: 4em;
 }

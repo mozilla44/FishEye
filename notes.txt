@@ -1,1 +1,10 @@
+1)traiter  vidéos
 
+2)finir media images(likes etc )
+
+3) css (flex etc) 
+
+4) gerer videos (balise html)
+
+
+revoir contenu session 02/12 

@@ -278,6 +278,8 @@ main .photographer_presentation .profile_picture {
 
 main .photographer_presentation .profile_picture .profile_pic {
   margin-right: 3em;
+  height: 12em;
+  width: 12em;
 }
 
 @media all and (min-width: 320px) and (max-width: 450px) {
@@ -353,6 +355,9 @@ main .photographer_presentation .photographer_details .photographer_name {
 
 main .photographer_presentation .photographer_details .photographer_location {
   color: #901C1C;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 main .photographer_presentation .photographer_details .profile_tags .tags_links {
@@ -370,6 +375,8 @@ main .photographer_works .photographer_gallery {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media all and (min-width: 320px) and (max-width: 450px) {
@@ -582,6 +589,7 @@ main .bground #close_form i {
 
 #contact_btn {
   cursor: pointer;
+  margin-left: 4em;
 }
 
 body {
