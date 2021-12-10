@@ -1,8 +1,6 @@
 
 const modalForm = (profile) => {
 
-  // create html map
-
   let bground = document.createElement("section")
   bground.classList.add("bground")
   bground.setAttribute("id" , "close_modal_btn")

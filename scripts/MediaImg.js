@@ -1,4 +1,4 @@
-class Media {
+class MediaImg {
     constructor (data , name) {
         Object.assign(this , data);
         this.name = name.split(" ")[0].replace("-" , "_");
@@ -22,6 +22,8 @@ class Media {
     </div>`
     
     }
+
+
 
     
 }

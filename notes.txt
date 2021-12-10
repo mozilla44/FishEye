@@ -1,10 +1,30 @@
 1)traiter  vidéos
 
-2)finir media images(likes etc )
+2)finir media images(likes etc )  ok 
 
-3) css (flex etc) 
+3) css (flex etc) ok
 
 4) gerer videos (balise html)
 
 
 revoir contenu session 02/12 
+
+
+------------------------- 10/12------------------
+
+alt sur video
+
+nombres likes 
+closest + queryslector
+
+nombre total de likes
+
+class lightbox 
+
+modale log input
+
+api validate js
+
+modale en poo
+
+acesibilité

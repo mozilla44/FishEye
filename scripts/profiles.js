@@ -19,7 +19,7 @@ fetch('../data.json')
 
     findMedia.forEach(m => {
 
-    let media = new Media(m , photographer.name);
+    let media = new MediaFactory(m , photographer.name);
     document.querySelector(".photographer_gallery").innerHTML += media.createMedia();
 
 });
