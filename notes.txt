@@ -35,5 +35,5 @@ fctn separée events modale
 
 ///
 
-botom bar inside html or createed with js ? 
+récuperer nombre de likes pour footer
 event ok sur coeur mais comment modifier nombre

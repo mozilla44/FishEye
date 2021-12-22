@@ -278,3 +278,20 @@ main {
     cursor: pointer;
     margin-left: 4em;
 }
+
+.bottom-bar {
+    background-color: $secondary_color;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0.625em 0.625em 0 0 ;
+    height: 3em;
+    width: 15em;
+    position: fixed;
+    right: 15px;
+    bottom: 0px;
+    .bottom_heart{
+        color: $primary_color;
+
+    }
+}

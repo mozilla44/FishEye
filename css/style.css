@@ -596,6 +596,27 @@ main .bground #close_form i {
   margin-left: 4em;
 }
 
+.bottom-bar {
+  background-color: #DB8876;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-radius: 0.625em 0.625em 0 0;
+  height: 3em;
+  width: 15em;
+  position: fixed;
+  right: 15px;
+  bottom: 0px;
+}
+
+.bottom-bar .bottom_heart {
+  color: #901C1C;
+}
+
 body {
   /* img {
         
