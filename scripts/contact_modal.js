@@ -1,4 +1,12 @@
 
+document.getElementById("contact_btn").addEventListener("click", (e)=>{
+  document.querySelector(".bground").classList.add ("active");
+}) 
+
+
+
+
+
 const modalForm = (profile) => {
 
   let bground = document.createElement("section")

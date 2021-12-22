@@ -487,9 +487,7 @@ main .photographer_works .sorting {
 }
 
 main .bground {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: absolute !important;
   top: 3em;
   left: 25vw;
@@ -498,6 +496,12 @@ main .bground {
   width: 25em;
   position: relative;
   padding-top: 2em;
+}
+
+main .bground.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media all and (min-width: 320px) and (max-width: 450px) {

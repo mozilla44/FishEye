@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="icon" type="image/png" href="../images/favicon.png">
-    
+
     <meta name="author" content="Antoine Declercq">
     <title>FishEye</title>
 </head>
@@ -62,17 +62,56 @@
                 </select>
             </div>
             <div class="photographer_gallery">
-                
+
             </div>
         </section>
-        
+
+        <section class="bground">
+            <i class="fas fa-times" id="close_modal_btn"></i>
+            <div class="modal_content">
+                <form name="form" id="contact_form" class="form" action="">
+                    <h1 class="contact_name">Contactez-moi</h1>
+                    <h2 class="modal_photographer_name">Mimi Keel</h2>
+                    <div class="formData" id="input_first">
+                        <p class="input_name">Prénom</p>
+                        <label for="first"></label>
+                        <input class="text-control" type="text" id="first" name="first" minlength="2">
+                        <p id="errorFirst" class="errorMesage"></p>
+                        <div class="formData" id="input_last">
+                            <p class="input_name">Nom</p>
+                            <label for="last"></label>
+                            <input class="text-control" type="text" id="last" name="last">
+                            <p id="errorLast" class="errorMesage"></p>
+                        </div>
+                        <div class="formData" id="input_email">
+                            <p class="input_name">email</p>
+                            <label for="email"></label>
+                            <input class="text-control" type="" id="email" name="email" placeholder="adresse@email.com">
+                            <p id="errorEmail" class="errorMesage"></p>
+                        </div>
+                        <div class="formData" id="input_message">
+                            <p class="input_name">Votre message</p>
+                            <label for="message"></label>
+                            <input class="text-control" type="text" id="form_message" name="message"
+                                aria-label="Your message"></input>
+                            <p id="errorFormMesage" class="errorMesage"></p>
+                        </div>
+                        <div id="send_btn">
+                            <input class="btn btn_primary" id="contact-submit-btn" type="submit" role="button"
+                                aria-label="Send" value="Envoyer">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
     <script src="../scripts/MediaImg.js"></script>
     <script src="../scripts/MediaVideo.js"></script>
     <script src="../scripts/MediaFactory.js"></script>
     <script src="../scripts/photographer.js"></script>
-    <script src="../scripts/contact_modal.js"></script>
     <script src="../scripts/profiles.js"></script>
+
 </body>
 
 </html>

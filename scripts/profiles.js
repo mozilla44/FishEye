@@ -16,6 +16,10 @@ fetch('../data.json')
     let findMedia = data.media.filter(media =>  media.photographerId  == id);
 
     document.querySelector(".photographer_presentation").innerHTML = photographer.createPhotographerHeader()
+    document.getElementById("contact_btn").addEventListener("click", (e)=>{
+        document.querySelector(".bground").classList.add("active");
+      }) 
+      
 
     findMedia.forEach(m => {
 

@@ -187,7 +187,7 @@ main {
     }
 
     .bground {
-        display: flex;
+        display: none;
         position: absolute !important;
         top: 3em;
         left: 25vw;
@@ -196,6 +196,10 @@ main {
         width: 25em;
         position: relative;
         padding-top: 2em;
+
+        &.active {
+            display: flex;
+        }
         @include mobile {
             width: 90vw !important;
             position: absolute !important;

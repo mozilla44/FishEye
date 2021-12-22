@@ -28,3 +28,7 @@ api validate js
 modale en poo
 
 acesibilité
+
+
+
+fctn separée events modale 
