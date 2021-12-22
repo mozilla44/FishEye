@@ -35,7 +35,15 @@ fetch('../data.json')
     console.log(err)
 })
 
+// add event on heart icon 
 
+const gallery = document.querySelector(".photographer_gallery");
+
+gallery.addEventListener('click', function (e) {
+    if (e.target.classList.contains('fa-heart')) {
+      alert("")
+    }
+  });
 
 
 
