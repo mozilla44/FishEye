@@ -32,3 +32,8 @@ acesibilité
 
 
 fctn separée events modale 
+
+///
+
+botom bar inside html or createed with js ? 
+queryselector always null for heart icon 
