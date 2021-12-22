@@ -19,6 +19,9 @@ fetch('../data.json')
     document.getElementById("contact_btn").addEventListener("click", (e)=>{
         document.querySelector(".bground").classList.add("active");
       }) 
+    document.getElementById("close_modal_btn").addEventListener("click", (x)=> {
+        document.querySelector(".bground").classList.remove("active")
+    } )
       
 
     findMedia.forEach(m => {
