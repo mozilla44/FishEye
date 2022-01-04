@@ -35,5 +35,9 @@ fctn separée events modale
 
 ///
 
-récuperer nombre de likes pour footer
-event ok sur coeur mais comment modifier nombre
+
+
+
+///
+
+pk media = null ?

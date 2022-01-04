@@ -11,9 +11,12 @@ fetch('../data.json')
 })
 .then(function (data) {
 
-    let photographer =  new Photographer(data.photographers.find(p => p.id == id));
+    
     
     let findMedia = data.media.filter(media =>  media.photographerId  == id);
+    let photographer =  new Photographer(data.photographers.find(p => p.id == id),findMedia);
+
+    document.querySelector("footer").innerHTML = photographer.createPhotographerBottom()
 
     document.querySelector(".photographer_presentation").innerHTML = photographer.createPhotographerHeader()
     document.getElementById("contact_btn").addEventListener("click", (e)=>{
@@ -29,6 +32,18 @@ fetch('../data.json')
     let media = new MediaFactory(m , photographer.name);
     document.querySelector(".photographer_gallery").innerHTML += media.createMedia();
 
+    document.querySelectorAll(".gallery_item .fa-heart").forEach(heart => {
+      heart.addEventListener('click', function (e) {
+        if (e.currentTarget.classList.contains('fa-heart')) {
+         let likes = e.currentTarget.closest(".preview_info").querySelector(".number_likes");
+         console.log(likes.innerHTML)
+         likes.innerHTML = parseInt(likes.innerHTML) +1;
+         let totalLikes = document.querySelector("#bottom-likes")
+         totalLikes.innerHTML = parseInt(totalLikes.innerHTML) +1;
+        }
+      });
+    })
+
 });
 })
 .catch(function (err) {
@@ -37,13 +52,8 @@ fetch('../data.json')
 
 // add event on heart icon 
 
-const gallery = document.querySelector(".photographer_gallery");
 
-gallery.addEventListener('click', function (e) {
-    if (e.target.classList.contains('fa-heart')) {
-      alert("")
-    }
-  });
+
 
 
 

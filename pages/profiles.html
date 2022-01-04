@@ -75,24 +75,24 @@
                     <div class="formData" id="input_first">
                         <p class="input_name">Prénom</p>
                         <label for="first"></label>
-                        <input class="text-control" type="text" id="first" name="first" minlength="2">
+                        <input class="text-control" type="text" id="first" name="first" minlength="2" required>
                         <p id="errorFirst" class="errorMesage"></p>
                         <div class="formData" id="input_last">
                             <p class="input_name">Nom</p>
                             <label for="last"></label>
-                            <input class="text-control" type="text" id="last" name="last">
+                            <input class="text-control" type="text" id="last" name="last" minlength="2" required>
                             <p id="errorLast" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_email">
                             <p class="input_name">email</p>
                             <label for="email"></label>
-                            <input class="text-control" type="" id="email" name="email" placeholder="adresse@email.com">
+                            <input class="text-control" type="e" id="email" name="email" placeholder="adresse@email.com" required>
                             <p id="errorEmail" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_message">
                             <p class="input_name">Votre message</p>
                             <label for="message"></label>
-                            <input class="text-control" type="text" id="form_message" name="message"
+                            <input class="text-control" type="text" id="form_message" name="message" minlength="4" required 
                                 aria-label="Your message"></input>
                             <p id="errorFormMesage" class="errorMesage"></p>
                         </div>
@@ -108,9 +108,9 @@
 
     <footer>
         <div class="bottom-bar">
-           <p></p>
+           <p id="bottom-likes"></p>
            <i class="fas fa-heart heart_icon bottom_heart"></i>
-           <p></p>
+           <p id="botom-price"></p>
         </div>
     </footer>
 
@@ -119,6 +119,7 @@
     <script src="../scripts/MediaFactory.js"></script>
     <script src="../scripts/photographer.js"></script>
     <script src="../scripts/profiles.js"></script>
+    <script src="../scripts/contact_modal.js"></script>
 
 </body>
 

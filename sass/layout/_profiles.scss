@@ -74,7 +74,8 @@ main {
                 position: fixed;
                 transform: none;
                 width: 100%;
-                bottom: 2em;
+                bottom: 0.9em;
+                margin: 0;
                 left: 30%;
                 right: 30%;
                 height: 2em;
@@ -294,4 +295,25 @@ main {
         color: $primary_color;
 
     }
+}
+
+footer {
+    @include mobile {
+        display: none;
+    }
+    .bottom-bar {
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+    .likes_hearts {
+        display: flex;
+        align-items: center;
+        i{
+            margin-left: 0.5em;
+        }
+        
+    }
+    
+    
 }

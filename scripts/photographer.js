@@ -1,6 +1,7 @@
 class Photographer {
-    constructor (data) {
+    constructor (data, media = null) {
         Object.assign(this , data)
+        this.media = media
     }
     
     createPhotographerCard (){
@@ -58,5 +59,19 @@ class Photographer {
             <img role="img" alt="Photo de profil de ${this.name}"
                 src="/images/sample_photos/Photographers_ID_Photos/${this.portrait}" class="rounded_img profile_pic">
         </div>`
+    }
+
+    createPhotographerBottom (){
+        return `<div class="bottom-bar">
+        <div class="likes_hearts">
+        <p id="bottom-likes">${this.getNumberLikes()}</p>
+        <i class="fas fa-heart heart_icon bottom_heart"></i>
+        </div>
+        <p id="botom-price">${this.price} €/jour</p>
+     </div>`
+    }
+
+    getNumberLikes (){
+      return this.media.map(media => media.likes).reduce((total ,like) => total+like);
     }
 }

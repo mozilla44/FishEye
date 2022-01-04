@@ -313,7 +313,8 @@ main .photographer_presentation #contact_btn {
     -webkit-transform: none;
             transform: none;
     width: 100%;
-    bottom: 2em;
+    bottom: 0.9em;
+    margin: 0;
     left: 30%;
     right: 30%;
     height: 2em;
@@ -615,6 +616,34 @@ main .bground #close_form i {
 
 .bottom-bar .bottom_heart {
   color: #901C1C;
+}
+
+@media all and (min-width: 320px) and (max-width: 450px) {
+  footer {
+    display: none;
+  }
+}
+
+footer .bottom-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: bold;
+}
+
+footer .likes_hearts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .likes_hearts i {
+  margin-left: 0.5em;
 }
 
 body {
