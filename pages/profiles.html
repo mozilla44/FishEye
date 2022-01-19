@@ -26,6 +26,10 @@
     </header>
 
     <main class="main" id="main">
+
+
+
+
         <section class="photographer_presentation">
             <div class="photographer_details">
                 <h1 class="photographer_name">Mimi Keel</h1>
@@ -86,14 +90,15 @@
                         <div class="formData" id="input_email">
                             <p class="input_name">email</p>
                             <label for="email"></label>
-                            <input class="text-control" type="email" id="email" name="email" placeholder="adresse@email.com" required>
+                            <input class="text-control" type="email" id="email" name="email"
+                                placeholder="adresse@email.com" required>
                             <p id="errorEmail" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_message">
                             <p class="input_name">Votre message</p>
                             <label for="message"></label>
-                            <input class="text-control" type="text" id="form_message" name="message" minlength="4" required 
-                                aria-label="Your message"></input>
+                            <input class="text-control" type="text" id="form_message" name="message" minlength="4"
+                                required aria-label="Your message"></input>
                             <p id="errorFormMesage" class="errorMesage"></p>
                         </div>
                         <div id="send_btn">
@@ -108,11 +113,21 @@
 
     <footer>
         <div class="bottom-bar">
-           <p id="bottom-likes"></p>
-           <i class="fas fa-heart heart_icon bottom_heart"></i>
-           <p id="botom-price"></p>
+            <p id="bottom-likes"></p>
+            <i class="fas fa-heart heart_icon bottom_heart"></i>
+            <p id="botom-price"></p>
         </div>
     </footer>
+
+    <div id="diaporama">
+        <button class="previous_lightbox"><i class="fas fa-chevron-left"></i></button>
+        <div id="mediacontainer">
+            
+        </div>
+        <button class="next_lightbox"><i class="fas fa-chevron-right"></i></button>
+        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+    </div>
+
 
     <script src="../scripts/MediaImg.js"></script>
     <script src="../scripts/MediaVideo.js"></script>
@@ -120,6 +135,7 @@
     <script src="../scripts/photographer.js"></script>
     <script src="../scripts/profiles.js"></script>
     <script src="../scripts/contact_modal.js"></script>
+    <script src="../scripts/lightbox.js"></script>
 
 </body>
 

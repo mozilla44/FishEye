@@ -35,7 +35,9 @@ page.
 de likes affiché.
 ■ Le nombre total de clichés doit être compté et ajouté au total du profil
 du photographe.
+
 ○ Les médias peuvent être triés par popularité, date ou titre.
+
 ○ Lorsque l'utilisateur clique sur un média, celui-ci doit s’ouvrir dans une
 lightbox :
 ■ Lorsque la lightbox est affichée, il y a une croix dans le coin pour

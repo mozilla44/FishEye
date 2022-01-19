@@ -6,9 +6,9 @@ class MediaVideo {
     }
 
     createMedia () {
-        return `<div class="gallery_item lightbox">
+        return `<div class="gallery_item lightbox" data-id="${this.id}">
         <div class="lightbox_preview">
-            <video role="video" alt="${this.alt}" class="roundedCorner_img" controls>
+            <video role="video" alt="${this.alt}" class="roundedCorner_img">
             <source src="../images/sample_photos/${this.name}/${this.video}">
             </video>
                 
@@ -24,5 +24,10 @@ class MediaVideo {
     </div>`
     }
 
+    createMediaLightbox(){
+        return `<video role="video" alt="${this.alt}" class="roundedCorner_img" controls>
+        <source src="../images/sample_photos/${this.name}/${this.video}">
+        </video>`
+    }
     
 }

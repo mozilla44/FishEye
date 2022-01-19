@@ -6,7 +6,8 @@ class MediaImg {
     }
 
     createMedia () {
-        return `<div class="gallery_item lightbox">
+        return `<div class="gallery_item lightbox" data-id="${this.id}">
+        
         <div class="lightbox_preview">
             <img role="img" alt="${this.alt}"
                 src="../images/sample_photos/${this.name}/${this.image}" class="roundedCorner_img">
@@ -21,6 +22,11 @@ class MediaImg {
         <button class="close_lightbox" aria-label="close dialog"><i class="fas fa-times"></i></button>
     </div>`
     
+    }
+
+    createMediaLightbox(){
+        return `<img role="img" alt="${this.alt}"
+        src="../images/sample_photos/${this.name}/${this.image}" class="roundedCorner_img">`
     }
 
 

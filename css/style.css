@@ -389,9 +389,7 @@ main .photographer_works .photographer_gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 5%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -660,6 +658,20 @@ footer .likes_hearts {
 
 footer .likes_hearts i {
   margin-left: 0.5em;
+}
+
+#diaporama {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #808080B0;
+}
+
+#diaporama.show {
+  display: block;
 }
 
 body {

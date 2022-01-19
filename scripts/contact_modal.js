@@ -3,3 +3,4 @@ document.querySelector('#contact_form input[type = "submit"]').addEventListener(
   e.preventDefault();
   let isValid = document.getElementById("contact_form").reportValidity(); 
 });
+
