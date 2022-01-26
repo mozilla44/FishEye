@@ -672,6 +672,15 @@ footer .likes_hearts i {
 
 #diaporama.show {
   display: block;
+  background-color: green;
+}
+
+#diaporama #mediacontainer {
+  border: 3px solid red;
+}
+
+#diaporama #mediacontainer .roundedCorner_img {
+  border: 3px solid black;
 }
 
 body {

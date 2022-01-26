@@ -28,6 +28,9 @@ class MediaVideo {
         return `<video role="video" alt="${this.alt}" class="roundedCorner_img" controls>
         <source src="../images/sample_photos/${this.name}/${this.video}">
         </video>`
+        
     }
     
 }
+
+VarDate

@@ -331,6 +331,17 @@ footer {
     background-color: #808080B0;
     &.show {
         display: block;
-    } 
+        background-color: green;
+    }
+
+    #mediacontainer {
+        border: 3px solid red;
+        .roundedCorner_img {
+            border: 3px solid black;
+        }
+    }
+    
 }
+
+
 

@@ -1,17 +1,6 @@
 
-virer html ? (page profile)
-this.element = document.querySelector(selector) ?
-private names are not valid in this context ???
+sort pur les filtres ?  OUi ( listmedia )
 
-
-
-
-
-
-
-
-
-dataset balise
 
 
 

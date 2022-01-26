@@ -47,21 +47,21 @@ fetch('../data.json')
         });
       })
 
-      var diapo = new Diaporama(listMedia ,"#diaporama");
+    });
+    var diapo = new Diaporama(listMedia ,"#diaporama");
       
       document.querySelectorAll(".photographer_gallery .gallery_item").forEach(item => {
         item.addEventListener("click" , (e) =>{
           diapo.show(e.currentTarget.dataset.id)
         })
       }) 
-
-    });
   })
   .catch(function (err) {
     console.log(err)
   })
 
-// add event on heart icon 
+
+
 
 
 

@@ -1,49 +1,78 @@
 
 class Diaporama {
-    constructor(listMedia, selector){
+    constructor(listMedia, selector) {
         this.listMedia = listMedia;
         this.current = null;
-        this.element = document.querySelector(selector)
-        this.prepareEvent()
+        this.element = document.querySelector(selector);
+        this.prepareEvent();
     }
 
-    show(id){
-        let findMedia = this.listMedia.find((media) => media.id == id );
-        document.querySelector("#mediacontainer").innerHTML = findMedia.createMediaLightbox();
+    show(id) {
+        this.current = this.listMedia.find((media) => media.id == id);
         document.querySelector("#diaporama").classList.add("show")
+        this.display();
     }
 
-    
-    add(image){
+
+    add(image) {
         this.listMedia.push(image)
     }
 
-    play(){
-        this.current = this.listMedia[0];
+    
 
-    }
-
-    next(){
-        for(let i=0 ; i<this.listMedia.lenght; i++){
-            if (this.listMedia[i] == this.current){
-                this.current = this.listMedia[++i];
+    next() {
+        for (let i = 0; i < this.listMedia.length; i++) {
+            if (this.listMedia[i] == this.current) {
+                if(i+1 == this.listMedia.length){
+                    this.current = this.listMedia[0];
+                }
+                else{
+                    this.current = this.listMedia[++i];
+                }
+                
                 break;
             }
         }
+        this.display();
+
     }
 
-    previous(){
-        for(let i=0 ; i<this.listMedia.lenght; i++){
-            if (this.listMedia[i] == this.current){
-                this.current = this.listMedia[--i];
+    previous() {
+        for (let i = 0; i < this.listMedia.length; i++) {
+            if (this.listMedia[i] == this.current) {
+                if(i ==0 ){
+                    this.current = this.listMedia[this.listMedia.length - 1];
+                }
+                else{
+                    this.current = this.listMedia[--i];
+                }
+                
                 break;
             }
         }
+        this.display();
     }
 
-    prepareEvent (){
-    document.querySelector(".close-lightbox").addEventListener("click" , () => {
-    document.querySelector("#diaporama").classList.remove("show");
-    })
+    prepareEvent() {
+        document.querySelector(".close-lightbox").addEventListener("click", () => {
+            document.querySelector("#diaporama").classList.remove("show");
+        })
+
+        
+        this.element.querySelector(".previous_lightbox").addEventListener("click" , ()=>{
+            this.previous();
+        })
+        
+
+        this.element.querySelector(".next_lightbox").addEventListener("click" , ()=>{
+            this.next();
+        })
+
+    }
+
+    display(){
+        document.querySelector("#mediacontainer").innerHTML = this.current.createMediaLightbox();
+    }
 }
-    }
+
+
