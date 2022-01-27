@@ -33,4 +33,3 @@ class MediaVideo {
     
 }
 
-VarDate

@@ -18,18 +18,18 @@ class Diaporama {
         this.listMedia.push(image)
     }
 
-    
+
 
     next() {
         for (let i = 0; i < this.listMedia.length; i++) {
             if (this.listMedia[i] == this.current) {
-                if(i+1 == this.listMedia.length){
+                if (i + 1 == this.listMedia.length) {
                     this.current = this.listMedia[0];
                 }
-                else{
+                else {
                     this.current = this.listMedia[++i];
                 }
-                
+
                 break;
             }
         }
@@ -40,13 +40,13 @@ class Diaporama {
     previous() {
         for (let i = 0; i < this.listMedia.length; i++) {
             if (this.listMedia[i] == this.current) {
-                if(i ==0 ){
+                if (i == 0) {
                     this.current = this.listMedia[this.listMedia.length - 1];
                 }
-                else{
+                else {
                     this.current = this.listMedia[--i];
                 }
-                
+
                 break;
             }
         }
@@ -58,21 +58,29 @@ class Diaporama {
             document.querySelector("#diaporama").classList.remove("show");
         })
 
-        
-        this.element.querySelector(".previous_lightbox").addEventListener("click" , ()=>{
+        document.addEventListener('keydown', function (e) {
+            if (e.key == "Escape") {
+                document.querySelector("#diaporama").classList.remove("show");
+            }
+        });
+
+
+        this.element.querySelector(".previous_lightbox").addEventListener("click", () => {
             this.previous();
         })
-        
 
-        this.element.querySelector(".next_lightbox").addEventListener("click" , ()=>{
+
+
+        this.element.querySelector(".next_lightbox").addEventListener("click", () => {
             this.next();
         })
 
     }
 
-    display(){
+    display() {
         document.querySelector("#mediacontainer").innerHTML = this.current.createMediaLightbox();
     }
+
 }
 
 
