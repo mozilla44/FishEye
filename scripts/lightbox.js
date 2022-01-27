@@ -64,12 +64,9 @@ class Diaporama {
             }
         });
 
-
         this.element.querySelector(".previous_lightbox").addEventListener("click", () => {
             this.previous();
         })
-
-
 
         this.element.querySelector(".next_lightbox").addEventListener("click", () => {
             this.next();
