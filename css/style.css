@@ -334,8 +334,11 @@ main .photographer_presentation #contact_btn {
     left: 30%;
     right: 30%;
     height: 2em;
-    width: 7.5em;
+    width: 8em;
     /* text-align: center; */
+  }
+  main .photographer_presentation #contact_btn.hidden {
+    display: none;
   }
 }
 
@@ -667,20 +670,49 @@ footer .likes_hearts i {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: #808080B0;
+  background-color: #ffffff;
 }
 
 #diaporama.show {
-  display: block;
-  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border: 3px solid blue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+#diaporama.show .next_lightbox, #diaporama.show .previous_lightbox, #diaporama.show .close-lightbox {
+  width: 3em;
+  height: 3em;
+  border: 3px solid salmon;
 }
 
 #diaporama #mediacontainer {
   border: 3px solid red;
+  width: 40em;
+  height: 40em;
+  /* margin: auto;  */
 }
 
 #diaporama #mediacontainer .roundedCorner_img {
   border: 3px solid black;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#empty {
+  height: 1em;
 }
 
 body {

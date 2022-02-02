@@ -79,7 +79,10 @@ main {
                 left: 30%;
                 right: 30%;
                 height: 2em;
-                width: 7.5em;
+                width: 8em;
+                &.hidden{
+                    display: none;
+                }
                 /* text-align: center; */
             }
             background-color: $primary_color;
@@ -328,21 +331,42 @@ footer {
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: #808080B0;
+    background-color: #ffffff;
     &.show {
-        display: block;
-        background-color: grey;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid blue;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        
+        .next_lightbox,.previous_lightbox,.close-lightbox{
+            width: 3em;
+            height: 3em;
+            border: 3px solid salmon;
+        }
         
     }
 
     #mediacontainer {
         border: 3px solid red;
+       width: 40em;
+        height: 40em;
+        /* margin: auto;  */
         .roundedCorner_img {
             border: 3px solid black;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
     
 }
 
+#empty{
+    height: 1em;
+
+}
 
 
