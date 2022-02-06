@@ -1,6 +1,5 @@
 
-sort pur les filtres ?  OUi ( listmedia )
-
+fleches meme position selon image size
 
 
 
@@ -27,8 +26,7 @@ sort pur les filtres ?  OUi ( listmedia )
 explications this 
 KeyboardEvent.code https://developer.mozilla.org/fr/docs/Web/API/KeyboardEvent/code
 
-gap 
-bton overlap on mobile
+
 
 
 menu deroulant ( trier)
