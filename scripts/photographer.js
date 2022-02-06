@@ -8,7 +8,7 @@ class Photographer {
         
     return `<div class="photographer_card">
     <a class="profile" href="pages/profiles.html?id=${this.id}">
-        <img role="img" class="rounded_img" alt=""
+        <img role="img" class="rounded_img" alt="photo de profil de ${this.name}"
             src="images/sample_photos/Photographers_ID_Photos/${this.portrait}">
     </a>
     <div class="photographer_info">
@@ -56,7 +56,7 @@ class Photographer {
         </div>
         <button class="btn btn_secondary" id="contact_btn" aria-label="Contact me">Contactez-moi</button>
         <div class="profile_picture">
-            <img role="img" alt="Photo de profil de ${this.name}"
+            <img role="img" alt="Photo de profil"
                 src="/images/sample_photos/Photographers_ID_Photos/${this.portrait}" class="rounded_img profile_pic">
         </div>`
     }

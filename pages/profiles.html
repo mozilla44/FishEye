@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -56,25 +56,25 @@
                     <h2 class="modal_photographer_name">Mimi Keel</h2>
                     <div class="formData" id="input_first">
                         <p class="input_name">Prénom</p>
-                        <label for="first"></label>
+                        <label for="first">champs prénom</label>
                         <input class="text-control" type="text" id="first" name="first" minlength="2" required>
                         <p id="errorFirst" class="errorMesage"></p>
                         <div class="formData" id="input_last">
                             <p class="input_name">Nom</p>
-                            <label for="last"></label>
+                            <label for="last">champs nom de famille</label>
                             <input class="text-control" type="text" id="last" name="last" minlength="2" required>
                             <p id="errorLast" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_email">
                             <p class="input_name">email</p>
-                            <label for="email"></label>
+                            <label for="email">adresse email</label>
                             <input class="text-control" type="email" id="email" name="email"
                                 placeholder="adresse@email.com" required>
                             <p id="errorEmail" class="errorMesage"></p>
                         </div>
                         <div class="formData" id="input_message">
                             <p class="input_name">Votre message</p>
-                            <label for="message"></label>
+                            <label for="message">votre message</label>
                             <input class="text-control" type="text" id="form_message" name="message" minlength="4"
                                 required aria-label="Your message"></input>
                             <p id="errorFormMesage" class="errorMesage"></p>
@@ -99,11 +99,11 @@
     </footer>
 
     <div id="diaporama">
-        <button class="previous_lightbox"><i class="fas fa-chevron-left"></i></button>
+        <button class="previous_lightbox" aria-label="image précédente" aria-hidden="true"><i class="fas fa-chevron-left"></i></button>
         <div id="mediacontainer">
         </div>
-        <button class="next_lightbox"><i class="fas fa-chevron-right"></i></button>
-        <button class="close-lightbox"><i class="fas fa-times"></i></button>
+        <button class="next_lightbox" aria-label="image suivante" aria-hidden="true"><i class="fas fa-chevron-right"></i></button>
+        <button class="close-lightbox" aria-label="fermer le diaporama" aria-hidden="true"><i class="fas fa-times"></i></button>
     </div>
 
 

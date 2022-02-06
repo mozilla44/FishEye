@@ -1,5 +1,6 @@
 
-fleches meme position selon image size
+bouton fermer 
+empty button ( but hidden)
 
 
 
